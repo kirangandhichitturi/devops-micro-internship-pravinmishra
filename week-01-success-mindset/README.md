@@ -33,7 +33,7 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+I believe that investing deeply in a technology that eventually "dies" is not a waste of time—it is actually a massive competitive advantage.In the tech industry, there is a dominant, almost obsessive narrative that you must always chase the shiny new framework, and that if a platform you specialized in becomes obsolete, your time was wasted. Having spent 15 years in IT—including significant time as an Adobe Flex developer before pivoting deeply into performance and automation engineering—most people around me look back at deprecated ecosystems with regret or view them as career dead-ends.I completely disagree.When you build complex enterprise applications in a framework like Flex, or when you spend years optimizing performance bottlenecks and writing automation scripts, you aren't just learning syntax. You are learning foundational engineering truths: state management, memory profiling, asynchronous data loading, and rendering pipelines.When the underlying technology stack shifted, the developers who only understood the "surface-level" syntax panicked. But those of us who understood why things break under load, how to automate away human error, and how complex components interact under the hood found that the core principles never changed.Chasing the latest hot framework gives you short-term marketability. Surviving a technology shift by mastering the deeper architectural and performance fundamentals gives you a career that lasts decades. Legacy experience isn't baggage; it's the ultimate foundational filter.
 
 ---
 
@@ -55,23 +55,26 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Mastery comes from consistent practice, not from sudden bursts of motivation.
 
 ### Evidence from my life
 
-Add your answer here...
-
+Across 15 years in Automation and Performance Testing, every skill I truly mastered—Selenium, JMeter, CI tools—came from steady, repeated practice.
+Whenever I tried to learn something “intensively in a weekend,” I forgot most of it.
+But when I worked on tools daily, even for short periods, my expertise grew naturally and stayed with me.
 ---
 
 ## Truth #2
 
 ### Truth
 
-Add your answer here...
+Clear processes always outperform improvisation in complex technical work.
 
 ### Evidence from my life
 
-Add your answer here...
+In testing, whenever I followed structured test plans, automation frameworks, or performance baselines, the results were predictable and reliable.
+When I tried to “figure things out on the fly,” defects slipped through, environments broke, and timelines suffered.
+Years of testing taught me that disciplined processes reduce errors and increase quality—every time.
 
 ---
 
@@ -79,11 +82,13 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+My performance improves significantly when I eliminate distractions and work in focused blocks.
 
 ### Evidence from my life
 
-Add your answer here...
+During critical testing cycles—performance runs, release validations, automation debugging—I always delivered my best work when I blocked out distractions and focused deeply.
+Whenever I multitasked or kept my phone nearby, tasks took longer and mistakes increased.
+The pattern repeated so consistently that focused work became a non‑negotiable part of my professional routine
 
 ---
 
@@ -135,13 +140,25 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+In the evolving world of intelligent automation and cloud engineering, few professionals have navigated a transformation as strategically as kirangandhi, whose journey from DevOps practitioner to Agentic‑AI‑driven DevOps Architect has become a recognised success story across Scotland’s tech community.
+
+Just a few years ago, kirangandhi set a clear short‑term goal: to become fully established as a DevOps Architect capable of designing autonomous, AI‑powered operational ecosystems. Today, that ambition has been realised. Their work with agent‑based AI systems — pipelines that anticipate failures, self‑optimise deployments, and manage cloud workloads with minimal human input — has earned admiration from engineering teams across the UK.
+
+But Version 2.0 of kirangandhi is defined by more than technical mastery. Over the past several years, a deeper long‑term vision has taken shape — one that moves beyond cloud infrastructure and into the world of entrepreneurship, specifically within Scotland’s retail and property sectors.
+
+While perfecting AI‑driven DevOps systems, kirangandhi quietly began studying the mechanics of local business ownership: the operational rhythm of a Post Office, the customer‑centric flow of a neighbourhood retail shop, and the long‑term stability offered by property investment. What started as curiosity evolved into a structured plan. Weekend visits to Broxburn’s high street, conversations with small business owners, and research into Scotland’s commercial property trends signalled a shift in direction.
+
+Journalists observing this evolution describe a professional entering a new chapter — someone ready to merge technical intelligence with community‑rooted entrepreneurship. The same automation principles once applied to cloud pipelines are now being adapted to optimise stock management, streamline customer service, and enhance operational efficiency in physical retail environments.
+
+Version 2.0 of kirangandhi is a hybrid: a DevOps Architect with the precision of a technologist and the ambition of a local business owner. Whether establishing a Post Office branch, running a retail shop, or building a property portfolio, this next chapter reflects a move toward independence, stability, and community impact.
+
+A future where technology and local business meet — and where kirangandhi stands confidently at that intersection.
 
 ### Public Link
 
-Paste your link here:
+https://www.linkedin.com/posts/activity-7478178993767264257-mXqR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog
 
-`__________________________`
+https://medium.com/p/8f115f82f784?postPublishedType=initial
 
 ---
 
@@ -173,7 +190,7 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+When it comes to my career, I make it a point to be completely honest and never take shortcuts, but in my personal life, there have been a few times where I cut corners just based on the time and situation. Even so, doing that left me with a heavy sense of guilt. Even though it was just a personal matter, I couldn't enjoy the time I saved because I knew I hadn't handled things the right way. It made me feel disappointed in myself for lowering my own standards, and that nagging feeling stayed with me, proving that even small personal shortcuts aren't worth the peace of mind you lose.
 
 ---
 
@@ -199,16 +216,16 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+1. The Miracle Morning by Hal Elrod
+2. Atomic Habits by James Clear
+3. The Psychology of Money by Morgan Housel
+4. Deep Work by Cal Newport
+5. How to Win Friends and Influence People by Dale Carnegie
+6. The Everyday Hero Manifesto by Robin Sharma
+7. Outlive: The Science and Art of Longevity by Dr. Peter Attia
+8. The Compound Effect by Darren Hardy
+9. Extreme Ownership by Jocko Willink and Leif Babin
+10. Feel Good Productivity by Ali Abdaal
 
 ---
 
@@ -237,16 +254,11 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+* Learning hours per week
+* Steps / workouts
+* Spending tracker
+* Sleep hours
+* Career growth
 
 ---
 
@@ -272,8 +284,7 @@ Examples:
 
 Answer:
 
-Add your answer here...
-
+Yes
 ---
 
 ## Step 2: Your 5-Month Routine + Focus Blocks
@@ -290,19 +301,26 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
+Mon–Thu: 7:30 PM – 8:30 PM (post‑work deep focus)
+
+Sat: 5:00 AM – 1:00 PM (cohort + assignments)
+
+Sun: 7:00 AM – 9:00 AM (reflection + planning)
 
 ---
 
 ### Focus Blocks
 
 #### When Will You Do DMI Work? (Days + Time)
-
-Add your answer here...
+Sunday to Thursday - 7.30 PM to 8.30 PM
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+4 weekday sessions (60 min each)
+
+1 long Saturday session
+
+1 short Sunday review session  .
 
 ---
 
@@ -316,7 +334,17 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
+Phone rule: Keep phone in another room during deep work; only check messages after the session.
+
+Social media rule: No social media between 7 PM–9 PM on weekdays.
+
+Environment setup:
+
+Use a dedicated desk space
+
+Keep only laptop + notebook
+
+Noise‑free environment (headphones if needed)
 
 ---
 
@@ -324,15 +352,17 @@ Add your answer here...
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+I realised that I work best with structured time blocks and clear deadlines. When the routine is defined, I stay disciplined and complete tasks faster.
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+I tend to delay starting tasks if I don’t have a clear plan. This leads to wasted evenings and rushed work.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+Maintain consistency and work with the timings mentioned above 
+I will start a Daily 10‑Minute Setup Ritual at 7:20 PM every weekday and work on the pending assignment modules
+
 
 ### LinkedIn Post
 
