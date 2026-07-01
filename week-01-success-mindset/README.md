@@ -59,9 +59,9 @@ Mastery comes from consistent practice, not from sudden bursts of motivation.
 
 ### Evidence from my life
 
-Across 15 years in Automation and Performance Testing, every skill I truly mastered—Selenium, JMeter, CI tools—came from steady, repeated practice.
+**Across 15 years in Automation and Performance Testing, every skill I truly mastered—Selenium, JMeter, CI tools—came from steady, repeated practice.
 Whenever I tried to learn something “intensively in a weekend,” I forgot most of it.
-But when I worked on tools daily, even for short periods, my expertise grew naturally and stayed with me.
+But when I worked on tools daily, even for short periods, my expertise grew naturally and stayed with me.**
 ---
 
 ## Truth #2
