@@ -154,7 +154,7 @@ A future where technology and local business meet — and where kirangandhi stan
 
 ### Public Link
 
-https://www.linkedin.com/posts/activity-7478178993767264257-mXqR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog
+https://www.linkedin.com/posts/activity-7478403897859170304-YlWn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog
 
 https://medium.com/p/8f115f82f784?postPublishedType=initial
 
@@ -374,7 +374,7 @@ https://www.linkedin.com/posts/activity-7478178993767264257-mXqR?utm_source=shar
 
 - Blog / Medium : https://medium.com/p/8f115f82f784?postPublishedType=initial  
 
----
+https://www.linkedin.com/posts/activity-7478403897859170304-YlWn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog
 
 ## 📌 About DMI & CloudAdvisory
 
