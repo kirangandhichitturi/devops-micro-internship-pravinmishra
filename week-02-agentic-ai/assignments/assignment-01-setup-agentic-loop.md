@@ -79,9 +79,8 @@ claude
 **Expected Output:** Version number printed. Browser opens for Anthropic login. After logging in, the Claude Code prompt appears in your terminal.
 
 **Screenshots Required:**
-- Screenshot 1 — Terminal showing `claude --version` with the version number visible
-- Screenshot 2 — Claude Code authenticated and showing the terminal prompt (your name visible)
-
+- ![github](../screenshots/Assignment-01-Task1-Screenshot1.png)
+- ![github](../screenshots/Assignment-01-Task1-Screenshot2.png)
 ---
 
 ### Task 2 — Fork and Clone the Starter Repository
@@ -104,7 +103,7 @@ code .
 **Expected Output:** VS Code opens showing `index.html`, `style.css`, and the `images/` folder in the sidebar. No `.claude/` directory exists yet. (Remove the .claude folder, CLAUDE.md, and .github folder if they exist.)
 
 **Screenshots Required:**
-- Screenshot 3 — VS Code with the project open, file tree visible showing `index.html`, `style.css`, `images/`
+- - ![github](../screenshots/Assignment-01-Task2-Screenshot3.png)
 
 ---
 
@@ -130,9 +129,8 @@ How many lines of CSS does this project have?
 - Question 2: Claude runs a command like `wc -l style.css` and reports the exact number
 
 **Screenshots Required:**
-- Screenshot 4 — Claude's response to the first question, showing it read the files (tool calls visible)
-- Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
-
+- ![github](../screenshots/Assignment-01-Task3-Screenshot4.png)
+- ![github](../screenshots/Assignment-01-Task3-Screenshot5.png)
 ---
 
 ## 8. Industry Insight
