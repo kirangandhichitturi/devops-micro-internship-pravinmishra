@@ -77,7 +77,7 @@ What is this project and how should I deploy it?
 **Screenshots Required:**
 - Screenshot 1 — Claude’s generic response before CLAUDE.md exists (project contains only `index.html`, `style.css`, `images/`, `README.MD`, `privacy.html`, `terms.html`)
 
----
+- ![github](../screenshots/Assignment-02-Task1-Screenshot1.png)
 
 ### Task 2 — Generate an initial CLAUDE.md using /init and review the auto-generated content in VS Code.
 
@@ -97,7 +97,7 @@ What is this project and how should I deploy it?
 
 **Screenshots Required:**
 - Screenshot 2 — The auto-generated CLAUDE.md open in VS Code showing its content
-
+- ![github](../screenshots/Assignment-02-Task2-Screenshot2.png)
 ---
 
 ### Task 3 — Customize the CLAUDE.md
@@ -123,7 +123,7 @@ What is this project and how should I deploy it?
 
 **Screenshots Required:**
 - Screenshot 3 — Your customized CLAUDE.md in VS Code showing all 5 sections (scroll to show the full file)
-
+- ![github](../screenshots/Assignment-02-Task3-Screenshot3.png)
 ---
 
 ### Task 4 — Test the After State
@@ -150,6 +150,8 @@ Add a React component to the homepage.
 - Screenshot 4 — Claude's specific, detailed answer after reading CLAUDE.md (Claude mentioning S3, CloudFront and Terraform)
 - Screenshot 5 — Claude refusing or warning against adding React because of the "No JavaScript" convention defined in CLAUDE.md
 
+- ![github](../screenshots/Assignment-02-Task4-Screenshot4.png)
+- ![github](../screenshots/Assignment-02-Task4-Screenshot5.png)
 ---
 
 ### Task 5 — Commit and push your changes to your fork in GitHub
@@ -186,7 +188,7 @@ git push origin main
 **Screenshots Required:**
 
 - Screenshot 6 — `CLAUDE.md` visible in your GitHub repository after pushing the commit
-
+- ![github](../screenshots/Assignment-02-Task5-Screenshot6.png)
 ---
 
 ## 8. Industry Insight
