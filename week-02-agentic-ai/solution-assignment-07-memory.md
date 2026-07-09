@@ -20,7 +20,7 @@ Identify where Claude Code stores memory for this project.
 
 #### Screenshot 1 — Memory file path shown by Claude
 
-Add your screenshot here.
+- ![github](../week-02-agentic-ai/screenshots/Assignment-07-Task1-Screenshot1.png)
 
 ---
 
@@ -34,13 +34,13 @@ Store project-specific rules and configurations into Claude’s memory and verif
 
 #### Screenshot 2 — Claude confirming the memory was saved
 
-Add your screenshot here.
+- ![github](../week-02-agentic-ai/screenshots/Assignment-07-Task2-Screenshot2.png)
 
 ---
 
 #### Screenshot 3 — The `MEMORY.md` file open in VS Code showing the saved content
 
-Add your screenshot here.
+- ![github](../week-02-agentic-ai/screenshots/Assignment-07-Task2-Screenshot3.png)
 
 ---
 
@@ -54,7 +54,7 @@ Terminate the current Claude Code session and restart it to ensure memory is the
 
 #### Screenshot 4 — VS Code reopened with a fresh Claude Code session showing no previous conversation
 
-Add your screenshot here.
+- ![github](../week-02-agentic-ai/screenshots/Assignment-07-Task3-Screenshot4.png)
 
 ---
 
@@ -68,13 +68,13 @@ Verify that Claude correctly recalls stored memory after a full session reset.
 
 #### Screenshot 5 — Claude recalling hero section colors
 
-Add your screenshot here.
+- ![github](../week-02-agentic-ai/screenshots/Assignment-07-Task4-Screenshot5.png)
 
 ---
 
 #### Screenshot 6 — Claude refusing JavaScript request based on memory rule
 
-Add your screenshot here.
+- ![github](../week-02-agentic-ai/screenshots/Assignment-07-Task4-Screenshot6.png)
 
 ---
 
