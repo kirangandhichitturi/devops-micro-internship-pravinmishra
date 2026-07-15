@@ -144,6 +144,7 @@ Paste your LinkedIn post URL here:
 
 `__________________________`
 
+https://www.linkedin.com/posts/activity-7482892365104443392-yMKe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog
 ---
 
 #### Screenshot — LinkedIn post showing the deployed application
