@@ -90,13 +90,13 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 Paste your forked repository URL here:
 
-`__________________________`
+`Add your URL here`
 
 ## LinkedIn post URL
 
 Paste your forked repository URL here:
 
-`__________________________`
+`Add your URL here`
 ---
 
 # Completion Checklist

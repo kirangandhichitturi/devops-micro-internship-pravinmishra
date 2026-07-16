@@ -110,7 +110,7 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 Paste your forked repository URL here:
 
-`__________________________`
+`Add your URL here`
 
 ---
 
