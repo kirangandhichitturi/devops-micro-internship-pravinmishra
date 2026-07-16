@@ -120,7 +120,7 @@ Verify the deployed website and Nginx service are healthy.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/etmuv9qW
 
 ---
 
@@ -141,7 +141,7 @@ Paste your LinkedIn post URL here:
 
 # Completion Checklist
 
-- [ ] Screenshot 0: Nginx service status (active/running)
+- [] Screenshot 0: Nginx service status (active/running)
 - [ ] Screenshot 1: Website files downloaded and extracted
 - [ ] Screenshot 2: Footer updated with Full Name, Group, Week, and Date
 - [ ] Screenshot 3: Nginx configuration test successful
