@@ -20,7 +20,7 @@ Verify the Ubuntu VM and Nginx are ready for deployment.
 
 #### Screenshot 0 — Output of `sudo systemctl status nginx --no-pager` showing Active (running)
 
-Add your screenshot here.
+- ![Task 0 Screenshot](screenshots/Week03_Assignment4_Task1_Screenshot0.jpg)
 
 ---
 
@@ -34,7 +34,7 @@ Download and extract the portfolio website template.
 
 #### Screenshot 1 — Output of `ls -la` showing the extracted project folder
 
-Add your screenshot here.
+- ![Task 1 Screenshot](screenshots/Week03_Assignment4_Task1_Screenshot1.jpg)
 
 ---
 
@@ -48,7 +48,7 @@ Update the website footer with your deployment details.
 
 #### Screenshot 2 — Nano editor open with the updated footer showing your Full Name, Group, Week, and Date
 
-Add your screenshot here.
+- ![Task 2 Screenshot](screenshots/Week03_Assignment4_Task2_Screenshot2.jpg)
 
 ---
 
@@ -62,13 +62,13 @@ Deploy the portfolio website to the Nginx web root.
 
 #### Screenshot 3 — Output of `sudo nginx -t` showing configuration test successful
 
-Add your screenshot here.
+- ![Task 3 Screenshot](screenshots/Week03_Assignment4_Task3_Screenshot3.jpg)
 
 ---
 
 #### Screenshot 4 — Output of `ls /var/www/html` showing deployed website files
 
-Add your screenshot here.
+- ![Task 3 Screenshot](screenshots/Week03_Assignment4_Task3_Screenshot4.jpg)
 
 ---
 
@@ -82,13 +82,13 @@ Verify the deployed website is publicly accessible and the footer contains your 
 
 #### Screenshot 5 — Output of `curl ifconfig.me` showing the server's public IP address
 
-Add your screenshot here.
+- ![Task 4 Screenshot](screenshots/Week03_Assignment4_Task4_Screenshot5.jpg)
 
 ---
 
 #### Screenshot 6 — Browser showing the live website with your Full Name and deployment details in the footer
 
-Add your screenshot here.
+- ![Task 4 Screenshot](screenshots/Week03_Assignment4_Task4_Screenshot6.jpg)
 
 ---
 
@@ -102,13 +102,13 @@ Verify the deployed website and Nginx service are healthy.
 
 #### Screenshot 7 — Output of `systemctl is-enabled nginx`
 
-Add your screenshot here.
+- ![Task 5 Screenshot](screenshots/Week03_Assignment4_Task5_Screenshot7.jpg)
 
 ---
 
 #### Screenshot 8 — Output of `curl -I http://localhost` showing 200 OK
 
-Add your screenshot here.
+- ![Task 5 Screenshot](screenshots/Week03_Assignment4_Task5_Screenshot8.jpg)
 
 ---
 
@@ -126,7 +126,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post showing the live website with your Full Name in the footer
 
-Add your screenshot here.
+- ![LinkedIn Post Screenshot](screenshots/Week03_Assignment4_Task5_Linkedinpost.jpg)
 
 ---
 
