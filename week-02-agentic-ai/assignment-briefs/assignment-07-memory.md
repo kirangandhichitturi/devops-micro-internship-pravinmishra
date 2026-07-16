@@ -76,7 +76,6 @@ Where does your memory file live for this project? Show me the full path.
 
 **Screenshots Required:**
 - Screenshot 1 — Memory file path shown by Claude
-![github](../screenshots/Assignment-07-Task1-Screenshot1.png)
 
 ---
 
@@ -98,10 +97,7 @@ Remember the following for all future sessions: The CSS hero section uses a dark
 
 **Screenshots Required:**
 - Screenshot 2 — Claude confirming the memory was saved
-![github](../screenshots/Assignment-07-Task2-Screenshot2.png)
-
 - Screenshot 3 — The `MEMORY.md` file open in VS Code showing the saved content
-![github](../screenshots/Assignment-07-Task2-Screenshot3.png)
 
 ---
 
@@ -124,7 +120,6 @@ Remember the following for all future sessions: The CSS hero section uses a dark
 
 **Screenshots Required:**
 - Screenshot 4 — VS Code reopened with a fresh Claude Code session showing no previous conversation
-![github](../screenshots/Assignment-07-Task3-Screenshot4.png)
 
 ---
 
@@ -154,10 +149,7 @@ Should I add a JavaScript animation to the hero section?
 
 **Screenshots Required:**
 - Screenshot 5 — Claude recalling hero section colors
-![github](../screenshots/Assignment-07-Task4-Screenshot5.png)
-
 - Screenshot 6 — Claude refusing JavaScript request based on memory rule
-![github](../screenshots/Assignment-07-Task4-Screenshot6.png)
 
 ---
 
@@ -207,4 +199,3 @@ Before submission, verify:
 - [ ] Claude recalled hero colors in new session without prompting (Screenshot 5)
 - [ ] Claude refused JavaScript — memory rule enforced (Screenshot 6)
 - [ ] All 6 screenshots captured and updated in GitHub folder
-

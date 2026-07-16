@@ -78,7 +78,7 @@ Each task must be completed sequentially.
 
 **Screenshots Required:**
 - Screenshot 1 — GitHub token creation page showing the selected scopes (`repo`, `read:user`) — token value must NOT be visible
-![github](../screenshots/Assignment-05-Task1-Screenshot1.png)
+
 ---
 
 ### Task 2 — Create .mcp.json at the Project Root
@@ -107,7 +107,6 @@ Each task must be completed sequentially.
 
 **Screenshots Required:**
 - Screenshot 2 — `.mcp.json` open in VS Code showing the full configuration
-![github](../screenshots/Assignment-05-Task2-Screenshot2.png)
 
 ---
 
@@ -135,7 +134,6 @@ Each task must be completed sequentially.
 
 **Screenshots Required:**
 - Screenshot 3 — `settings.local.json` open in VS Code showing the `env` section — **blur or cover the actual GitHub token value**
-![github](../screenshots/Assignment-05-Task3-Screenshot3.png)
 
 ---
 
@@ -157,7 +155,6 @@ Each task must be completed sequentially.
 
 **Screenshots Required:**
 - Screenshot 4 — `/mcp` output showing `github: connected`
-![github](../screenshots/Assignment-05-Task4-Screenshot4.png)
 
 ---
 
@@ -188,7 +185,6 @@ Use GitHub MCP to get the README.md file from <your-github-username>/Ultimate-Ag
 **Screenshots Required:**
 
 * Screenshot 5 — Claude's response showing the GitHub MCP tool call and the retrieved README.md content.
-![github](../screenshots/Assignment-05-Task5-Screenshot5.png)
 
 ---
 
@@ -232,4 +228,3 @@ Before submission, verify:
 - [ ] `/mcp` shows `github: connected`
 - [ ] Live GitHub query returned real repository data
 - [ ] `.mcp.json` committed and visible in GitHub repo
-

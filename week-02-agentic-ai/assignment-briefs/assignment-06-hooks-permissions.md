@@ -120,7 +120,6 @@ Your project should contain the Claude Code configuration structure:
 **Screenshots Required:**
 
 * Screenshot 1 — `.claude` folder structure visible in VS Code Explorer
-![github](../screenshots/Assignment-06-Task1-Screenshot1.png)
 
 ---
 
@@ -167,7 +166,6 @@ and contains the UserPromptSubmit hook script.
 **Screenshots Required:**
 
 * Screenshot 2 — `user-prompt-guard.sh` open in VS Code showing the hook script
-![github](../screenshots/Assignment-06-Task2-Screenshot2.png)
 
 ---
 
@@ -214,7 +212,6 @@ and contains the PreToolUse hook script.
 **Screenshots Required:**
 
 * Screenshot 3 — `pre-tool-guard.sh` open in VS Code showing the hook script
-![github](../screenshots/Assignment-06-Task3-Screenshot3.png)
 
 ---
 
@@ -259,7 +256,6 @@ and contains the PostToolUse hook script.
 **Screenshots Required:**
 
 - Screenshot 4 — `post-tool-logger.sh` open in VS Code showing the hook script
-![github](../screenshots/Assignment-06-Task4-Screenshot4.png)
 
 ---
 
@@ -359,7 +355,6 @@ settings.json
 **Screenshots Required:**
 
 * Screenshot 5 — `settings.json` open in VS Code showing permissions and hooks configuration
-![github](../screenshots/Assignment-06-Task5-Screenshot5.png)
 
 ---
 
@@ -406,7 +401,6 @@ Claude should not start reading files or executing commands.
 **Screenshots Required:**
 
 - Screenshot 6 — UserPromptSubmit hook blocking the destructive prompt
-![github](../screenshots/Assignment-06-Task6-Screenshot6.png)
 
 ---
 
@@ -453,7 +447,6 @@ Destructive command detected.
 **Screenshots Required:**
 
 - Screenshot 7 — PreToolUse hook blocking terraform destroy
-![github](../screenshots/Assignment-06-Task7-Screenshot7.png)
 
 ---
 
@@ -521,9 +514,6 @@ Example:
 
 - Screenshot 8 — Claude running terraform validate successfully
 - Screenshot 9 — `.claude/deploy.log` showing the logged command
-![github](../screenshots/Assignment-06-Task8-Screenshot8.png)
-![github](../screenshots/Assignment-06-Task8-Screenshot9.png)
-
 
 ---
 
@@ -572,5 +562,4 @@ Before submission, verify:
 - [ ] Terraform destroy command test shows PreToolUse intercepted the command
 - [ ] Terraform validate test shows PostToolUse created the log entry
 - [ ] All required screenshots are captured
-
 
