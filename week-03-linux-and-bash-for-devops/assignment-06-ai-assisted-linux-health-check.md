@@ -200,13 +200,13 @@ Run the Bash script against the healthy server and verify that it creates a repo
 
 #### Screenshot 9 — Output of `./scripts/linux-triage.sh` showing your Full Name and all five check results
 
-Add your screenshot here.
+- ![Task 5 Screenshot 9](screenshots/Week03_Assignment6_Task5_Screenshot9.jpg)
 
 ---
 
 #### Screenshot 10 — Output showing the captured exit code and final summary
 
-Add your screenshot here.
+- ![Task 5 Screenshot 10](screenshots/Week03_Assignment6_Task5_Screenshot10.jpg)
 
 ---
 
@@ -248,13 +248,13 @@ Turn the Bash script into a reusable, manually invoked Agentic AI workflow.
 
 #### Screenshot 11 — `SKILL.md` showing the frontmatter, allowed tool restrictions, and safety rules
 
-Add your screenshot here.
+- ![Task 6 Screenshot 11](screenshots/Week03_Assignment6_Task6_Screenshot11.jpg)
 
 ---
 
 #### Screenshot 12 — `/linux-triage` output for the healthy server
 
-Add your screenshot here.
+- ![Task 6 Screenshot 12](screenshots/Week03_Assignment6_Task6_Screenshot12.jpg)
 
 ---
 
@@ -296,19 +296,19 @@ Create a controlled service failure, gather evidence through Bash, and let Claud
 
 #### Screenshot 13 — Output showing Nginx is inactive and the HTTP request fails
 
-Add your screenshot here.
+- ![Task 7 Screenshot 13](screenshots/Week03_Assignment6_Task7_Screenshot13.jpg)
 
 ---
 
 #### Screenshot 14 — `/linux-triage` output showing failed evidence, most likely cause, and a suggested recovery command
 
-Add your screenshot here.
+- ![Task 7 Screenshot 14](screenshots/Week03_Assignment6_Task7_Screenshot14.jpg)
 
 ---
 
 #### Screenshot 15 — `incident-failure-report.txt` showing the failed checks and your Full Name
 
-Add your screenshot here.
+- ![Task 7 Screenshot 15](screenshots/Week03_Assignment6_Task7_Screenshot15.jpg)
 
 ---
 
@@ -356,25 +356,25 @@ Recover the service as the human operator and prove that the system is healthy a
 
 #### Screenshot 16 — Output showing Nginx is active and `curl -I http://localhost` returns 200 OK
 
-Add your screenshot here.
+- ![Task 8 Screenshot 16](screenshots/Week03_Assignment6_Task8_Screenshot16.jpg)
 
 ---
 
 #### Screenshot 17 — Second `/linux-triage` output showing successful recovery with no FAIL results
 
-Add your screenshot here.
+- ![Task 8 Screenshot 17](screenshots/Week03_Assignment6_Task8_Screenshot17.jpg)
 
 ---
 
 #### Screenshot 18 — Output of `ls -lah reports` showing both `incident-failure-report.txt` and `recovery-report.txt`
 
-Add your screenshot here.
+- ![Task 8 Screenshot 18](screenshots/Week03_Assignment6_Task8_Screenshot18.jpg)
 
 ---
 
 #### Screenshot 19 — `incident-summary.md` showing all required sections and your Full Name
 
-Add your screenshot here.
+- ![Task 8 Screenshot 19](screenshots/Week03_Assignment6_Task8_Screenshot19.jpg)
 
 ---
 
@@ -472,21 +472,20 @@ The workflow followed the Agentic Loop by gathering evidence, analyzing the caus
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/activity-7483937527226269696-swWn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
-
+- ![github](screenshots/Week03_Assignment6_LinkedinPost.jpg)
 ---
 
 # GitHub Repository URL
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`Add your URL here`
+https://github.com/kirangandhichitturi/devops-micro-internship-pravinmishra.git
 
 ---
 
