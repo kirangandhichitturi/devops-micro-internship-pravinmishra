@@ -426,8 +426,6 @@ The final script combines all these concepts by using variables to store data, a
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
 https://www.linkedin.com/posts/activity-7483896835200225280-s-h-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog
 
 ---

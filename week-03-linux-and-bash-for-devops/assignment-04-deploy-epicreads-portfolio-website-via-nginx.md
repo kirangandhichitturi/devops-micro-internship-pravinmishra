@@ -118,9 +118,7 @@ Verify the deployed website and Nginx service are healthy.
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-https://lnkd.in/p/etmuv9qW
+https://www.linkedin.com/posts/kirangandhi-chitturi-9a997919a_from-react-deployment-to-a-real-portfolio-share-7483899461761646592-uRJl/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog
 
 ---
 
