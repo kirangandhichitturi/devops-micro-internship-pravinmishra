@@ -131,7 +131,8 @@ This is not a course. It is an internship-style program — real deployments, re
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed| ✅ Completed | — | — |
-| 01 | Success Mindset | ✅ Completed | ✅ Completed | — | — |
+| 01 | Success Mindset | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/activity-7478403897859170304-YlWn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog
+ | https://medium.com/p/8f115f82f784?postPublishedType=initial |
 | 02 | Agentic AI with Claude Code | ⬜ ✅ Completed | ✅ Completed | — | — |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Completed | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
