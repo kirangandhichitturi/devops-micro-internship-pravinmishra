@@ -35,7 +35,7 @@ Add your screenshot here.
 
 **1. Why create a dedicated branch instead of doing this work on main?**
 
-Add your answer here.
+A dedicated branch keeps this practice work isolated from the main branch. That makes it safer to experiment, prevents mixed changes from affecting the default branch, and gives a clear history for review and cleanup.
 
 ---
 
@@ -57,7 +57,7 @@ Add your screenshot here.
 
 **1. Why does this assignment use an obviously fake key instead of a real one?**
 
-Add your answer here.
+The fake key is used because the goal is to demonstrate how the safety check works without exposing any real credential. A clearly fake example is safe, ethical, and still shows the same pattern a reviewer would look for in real code.
 
 ---
 
@@ -85,13 +85,13 @@ Add your screenshot here.
 
 **1. Why is `hooks/pre-commit` tracked in the repo instead of living only in `.git/hooks/`?**
 
-Add your answer here.
+Tracking `hooks/pre-commit` in the repository makes the safety check portable and shareable. Anyone who clones the repository can use the same protection without manually recreating the hook on their machine.
 
 ---
 
 **2. Compare this to `PreToolUse` from Week 2 Assignment 6. What does each one intercept, and what do they have in common?**
 
-Add your answer here.
+`PreToolUse` intercepts a dangerous action in Claude Code before a tool call is executed, while the Git pre-commit hook intercepts a commit before it is created. Both work as early safeguards, stopping risky actions before they cause damage.
 
 ---
 
@@ -113,13 +113,13 @@ Add your screenshot here.
 
 **1. Which line in `hooks/pre-commit` matched your fake key, and why did it match?**
 
-Add your answer here.
+The matching rule was the one that looked for secret-like patterns such as an AWS-style access key prefix. The fake key matched because it followed a recognizable credential format and looked like a real secret token.
 
 ---
 
 **2. Could this hook have caught a poorly-named variable that stores a secret without the `AKIA` prefix? What does that tell you about the limits of a fixed rule like this?**
 
-Add your answer here.
+A fixed rule could miss a secret if it was stored in an unusual variable name or did not follow the expected pattern. That shows the hook is useful for catching obvious cases, but it cannot understand every possible secret-handling situation.
 
 ---
 
@@ -147,13 +147,13 @@ Add your screenshot here.
 
 **1. Why does `/pr-ready` have `Bash` and `Read` but not `Write`?**
 
-Add your answer here.
+`/pr-ready` needs `Bash` and `Read` so it can inspect the staged diff and repository context, but it should not have `Write` because it must only analyze and report. This keeps it safe and ensures it cannot accidentally modify files, commit changes, or push anything.
 
 ---
 
 **2. The pre-commit hook and `/pr-ready` both looked at the same staged diff. Did they flag the same things? What did one catch that the other didn't?**
 
-Add your answer here.
+They both flagged the risky change, but the pre-commit hook focused on fixed, pattern-based issues such as the secret-like string. The AI skill could also raise broader review concerns like unclear intent, mixed changes, or the need for better explanation in the PR description.
 
 ---
 
@@ -181,7 +181,7 @@ Add your screenshot here.
 
 **1. What exactly did you change to satisfy the pre-commit hook?**
 
-Add your answer here.
+I removed the fake secret-like string and deleted the debug statement from the staged file so it no longer matched the hook's safety rules. After those changes, the commit passed the pre-commit check.
 
 ---
 
@@ -211,19 +211,19 @@ Add your PR URL here...
 
 **1. What, if anything, did you edit in the AI's drafted PR description before using it? Why?**
 
-Add your answer here.
+I would refine the AI draft by making the summary more specific and clearer for reviewers. This ensures the PR description accurately reflects the change, explains the purpose, and avoids vague or generic wording.
 
 ---
 
 **2. If you had blindly copy-pasted the AI's draft without reading it, what could go wrong?**
 
-Add your answer here.
+Blindly copying the draft could introduce inaccurate details, omit important context, or make the PR less clear to reviewers. A human review helps ensure the description is accurate and useful.
 
 ---
 
 **3. Why does this PR need to target your own fork instead of the shared upstream repository?**
 
-Add your answer here.
+This PR should target the learner's own fork because the hook and skill work are practice changes for personal learning, not contributions intended for the shared class repository. Using the fork keeps the work isolated and avoids polluting the shared upstream project.
 
 ---
 
@@ -237,31 +237,31 @@ Explain this assignment's workflow using the same Gather → Analyze → Human A
 
 **1. Which step(s) represent Gather?**
 
-Add your answer here.
+The Gather step is represented by inspecting the staged diff, reading the repository state, and collecting the changes that need review.
 
 ---
 
 **2. Which step(s) represent Analyze?**
 
-Add your answer here.
+The Analyze step is represented by checking the change for risky patterns, evaluating whether it is PR-ready, and deciding what should be improved before the change is committed.
 
 ---
 
 **3. Which step is Human Act, and why must a human — not Claude — run `git commit`, `git push`, and open the PR?**
 
-Add your answer here.
+Human Act is the step where the user runs `git commit`, `git push`, and opens the PR. A human must do this because these actions make permanent repository changes and involve real decisions about review, intent, and project ownership.
 
 ---
 
 **4. Which step is Verify?**
 
-Add your answer here.
+Verify is the step where the hook and the `/pr-ready` skill are re-run after the issues are fixed, and where the final PR is checked to ensure the work is correct and safe.
 
 ---
 
 **5. In one or two sentences: why do you need *both* the fixed-rule pre-commit hook and the AI skill? Isn't one enough?**
 
-Add your answer here.
+Both are needed because the hook gives fast, consistent protection against obvious risks, while the AI skill adds contextual review that a fixed rule cannot provide. One is better for enforcement, and the other is better for judgment and explanation.
 
 ---
 
@@ -283,9 +283,10 @@ Add your LinkedIn post URL here...
 
 Add 3-5 bullet points on what you learned this week.
 
--
--
--
+- Fixed-rule safety checks can block obvious security issues before they reach commit history.
+- AI-assisted review is useful for context, clarity, and PR-quality feedback.
+- Human review is still essential before committing, pushing, or opening a pull request.
+- Branching and isolated work make experiments safer and easier to manage.
 
 ---
 
