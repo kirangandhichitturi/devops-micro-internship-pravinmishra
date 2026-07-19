@@ -130,7 +130,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed| ✅ Completed | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed| ✅ Completed | — | https://medium.com/@kirangandhi.c/do-you-know-these-devops-basics-32e4eee8ec45 |
 | 01 | Success Mindset | ✅ Completed | ✅ Completed | [LinkedIn Post](https://www.linkedin.com/posts/activity-7478403897859170304-YlWn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog) | [Blog Post](https://medium.com/p/8f115f82f784?postPublishedType=initial) |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kirangandhi-chitturi-9a997919a_my-version-20-in-the-fastmoving-world-of-share-7478403896676360194-sRK0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog | https://medium.com/@kirangandhi.c/title-why-im-breaking-my-ai-systems-into-subagents-and-why-you-should-too-488d52b57480?sharedUserId=kirangandhi.c |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kirangandhi-chitturi-9a997919a_from-react-deployment-to-a-real-portfolio-share-7483899461761646592-uRJl/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog | https://medium.com/@kirangandhi.c/devops-concepts-explained-a-simple-clear-blog-58b1b68d3b82?sharedUserId=kirangandhi.c |
