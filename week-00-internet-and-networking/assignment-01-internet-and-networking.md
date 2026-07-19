@@ -23,12 +23,7 @@ Take a screenshot of your interaction showing:
 
 ## Screenshot
 
-Save your screenshot in the `screenshots` folder and update the file name below.
-
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
-
-
-Replace `task-1-chatgpt.png` with your actual screenshot file name.
+![Task 1 Screenshot](screenshots/Week00_Assignment1_Task1_Screenshot1.jpg)
 
 ---
 
@@ -59,7 +54,7 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-When a user in another country opens EpicReads, the request is split into small data packets and sent across the internet through many possible routes. The packets use IP addresses to identify the destination server, while TCP/IP ensures they arrive reliably and in the correct order. The website itself is delivered through HTTP or HTTPS, which defines how the browser requests and receives the content. This is how a site hosted in Finland can be accessed globally.
+When a user in another country opens EpicReads, their browser sends a request to the server in Finland over the internet. The data is broken into small packets and transmitted using packet switching, which allows each packet to travel through the fastest available route. Every device involved uses an IP address to identify the sender and receiver. TCP/IP is the core communication suite that ensures packets are delivered reliably, in the correct order, and without loss. Once the packets reach the server, the browser and server use HTTP or HTTPS to exchange the website data. HTTPS adds encryption, making the connection more secure for users.
 
 ---
 
@@ -89,12 +84,7 @@ EpicReads bookstore has two application versions:
 
 ## Diagram Screenshot / Photo
 
-Save your diagram image in the `screenshots` folder and update the file name below.
-
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
-
-
-Replace `task-3-diagram.png` with your actual diagram file name.
+![Application Architecture Diagram](screenshots/Week00_Assignment1_Task1_Screenshot1.jpg)
 
 ---
 
@@ -142,7 +132,7 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-DNS is the system that translates human-friendly names like epicreads.com into machine-readable IP addresses so browsers can reach the correct server. To connect the domain to the given IP address, the best record is an A record because it maps a domain directly to an IPv4 address. This is the standard choice when the target is a single server IP.
+DNS is the system that translates human-friendly domain names like epicreads.com into IP addresses so browsers can find the correct server on the internet. It works like an address book for the web. To connect the domain to the given IP address, an A record should be used because it maps a domain name directly to an IPv4 address. This is the correct record type when the website is hosted on a single server IP such as 52.172.142.222. If the service were on a different port, the domain would also need port handling in the application setup.
 
 ---
 
@@ -176,12 +166,7 @@ ls
 
 ## Screenshot
 
-Save your screenshot in the `screenshots` folder and update the file name below.
-
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
-
-
-Replace `task-5-vscode.png` with your actual screenshot file name.
+![VS Code Setup Screenshot](screenshots/Week00_Assignment1_Task5_Screenshot1.jpg)
 
 ---
 
