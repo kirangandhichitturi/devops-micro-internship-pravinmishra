@@ -132,7 +132,7 @@ This is not a course. It is an internship-style program — real deployments, re
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed| ✅ Completed | — | — |
 | 01 | Success Mindset | ✅ Completed | ✅ Completed | [LinkedIn Post](https://www.linkedin.com/posts/activity-7478403897859170304-YlWn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog) | [Blog Post](https://medium.com/p/8f115f82f784?postPublishedType=initial) |
-| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Completed | — | — |
+| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kirangandhi-chitturi-9a997919a_my-version-20-in-the-fastmoving-world-of-share-7478403896676360194-sRK0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog | https://medium.com/@kirangandhi.c/title-why-im-breaking-my-ai-systems-into-subagents-and-why-you-should-too-488d52b57480?sharedUserId=kirangandhi.c |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Completed | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
