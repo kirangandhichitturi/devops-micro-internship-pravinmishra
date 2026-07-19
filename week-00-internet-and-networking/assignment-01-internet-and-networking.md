@@ -34,7 +34,7 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+I learned that a protocol is a set of rules that helps devices communicate in a consistent way. A simple real-life example is how people follow traffic rules at a road intersection to avoid confusion. In networking, protocols help data move safely and in the correct order between systems.
 
 ---
 
@@ -59,7 +59,7 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+When a user in another country opens EpicReads, the request is split into small data packets and sent across the internet through many possible routes. The packets use IP addresses to identify the destination server, while TCP/IP ensures they arrive reliably and in the correct order. The website itself is delivered through HTTP or HTTPS, which defines how the browser requests and receives the content. This is how a site hosted in Finland can be accessed globally.
 
 ---
 
@@ -102,18 +102,18 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* HTML/CSS for structuring and styling the user interface
+* React for building interactive web pages
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Node.js with Express for handling application logic and APIs
+* Python with Flask for building lightweight backend services
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* MySQL for relational data storage
+* PostgreSQL for robust and scalable relational database management
 
 ---
 
@@ -142,7 +142,7 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+DNS is the system that translates human-friendly names like epicreads.com into machine-readable IP addresses so browsers can reach the correct server. To connect the domain to the given IP address, the best record is an A record because it maps a domain directly to an IPv4 address. This is the standard choice when the target is a single server IP.
 
 ---
 
@@ -218,7 +218,7 @@ Add the following credit note at the end of your post:
 Paste your LinkedIn post URL here:
 
 ```text
-Add your URL here...
+https://www.linkedin.com/in/kirangandhichitturi/
 ```
 
 ---
@@ -227,7 +227,13 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+I completed my Week 0 assignment on internet and networking as part of the DevOps Micro Internship with Agentic AI. I learned the basics of protocols, packet switching, IP addressing, DNS, and how application architecture works in real-world systems. I also set up Visual Studio Code and practiced using it for everyday development tasks.
+
+This assignment helped me understand how websites are delivered across the internet and why networking concepts are important for DevOps. I now have a stronger foundation in how applications communicate, how domains are resolved, and how tools like VS Code support development workflows.
+
+#DMIByPravinMishra #AgenticAI #DevOps #Networking #LearningInPublic
+
+P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by Pravin Mishra. You can start your DevOps journey by joining this Discord community: https://discord.pravinmishra.com/
 
 ---
 
@@ -235,19 +241,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+I found the basic networking concepts easy to understand because they are closely related to everyday experiences like sending messages or traveling data through different routes.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+The most difficult part was explaining the relationship between DNS, IP addresses, and the internet flow in a clear and concise way.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+I will improve my ability to explain technical concepts more clearly and practice using more structured notes while learning new DevOps topics.
 
 ---
 
