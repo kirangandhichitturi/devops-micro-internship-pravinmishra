@@ -46,7 +46,7 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+- ![github](screenshots/Week02_Assignment8_Task1_Screenshot1.jpg)
 
 ---
 
@@ -54,7 +54,7 @@ Add your screenshot here.
 
 Blog Link:
 
-`Add your URL here`
+https://medium.com/@andrewff1978/devops-micro-internship-with-agentic-ai-ff3a9e58bd0a?sharedUserId=andrewff1978
 
 ---
 
