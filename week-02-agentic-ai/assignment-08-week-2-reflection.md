@@ -92,23 +92,32 @@ Your post must include:
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
-
+- ![github](screenshots/Week02_Assignment8_Task2_Screenshot2.jpg)
 ---
 
 ### Submission Field
 
 LinkedIn Post Content (copy-paste here):
 
-```
-Paste your LinkedIn post content here
-```
+We moved away from basic prompts and focused on making AI agents a functional part of real DevOps pipelines.
+
+🧰 The Tech Stack & Concepts: Explored Claude Code, Skills, Subagents, MCP, Hooks, Permissions, and Memory.
+
+🧠 Key Achievement: Implementing Guardrails I built active safety rails using Claude Code Hooks. The goal? Catch destructive commands before they happen, block unsafe Terraform executions, and generate automated validation logs.
+
+⚠️ The Hurdles & Triumphs: Configuring hooks brought some classic engineering challenges. I hit roadblocks with script paths, missing hook files, and execution environments. Working through these issues taught me exactly how Claude processes commands and reinforced the importance of ironclad environment permissions.
+
+🎯 Final Thought: AI agents are game-changers, but only if they are built responsibly. Human oversight and strict safety controls are what bridge the gap between a cool demo and a reliable production tool.
+
+On to the next sprint! 🏁
+
+Comments
 
 ---
 
 ### LinkedIn Post Link:
 
-`Add your URL here`
+https://www.linkedin.com/pulse/another-week-milestone-down-my-devops-time-we-went-deep-chitturi-9wuue
 
 ---
 
