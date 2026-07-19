@@ -200,11 +200,7 @@ Add the following credit note at the end of your post:
 
 ## LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-```text
-https://www.linkedin.com/in/kirangandhichitturi/
-```
+https://www.linkedin.com/pulse/week-1-my-devops-micro-internship-officially-books-chitturi-vgcbe
 
 ---
 
