@@ -20,13 +20,13 @@ Confirm that you have a working GitHub account and can access your GitHub dashbo
 
 #### Screenshot 1 — GitHub dashboard or Home page showing you're signed in, with your username visible
 
-Add your screenshot here.
+![Task 1 - Assignment 4 - Screenshot 1](screenshots/Week04_Assignment4_Task1_Screenshot1.jpg)
 
 ---
 
 #### Screenshot 2 (Optional but Recommended) — Your GitHub profile with `https://github.com/<username>` visible in the browser address bar
 
-Add your screenshot here.
+![Task 1 - Assignment 4 - Screenshot 2](screenshots/Week04_Assignment4_Task1_Screenshot2.jpg)
 
 ---
 
@@ -40,19 +40,19 @@ Browse Trending, search for a public project, star at least one repository, and 
 
 #### Screenshot 3 — GitHub Trending page visible in the browser
 
-Add your screenshot here.
+![Task 2 - Assignment 4 - Screenshot 3](screenshots/Week04_Assignment4_Task2_Screenshot3.jpg)
 
 ---
 
 #### Screenshot 4 — A repository page showing the Star button in the Starred state
 
-Add your screenshot here.
+![Task 2 - Assignment 4 - Screenshot 4](screenshots/Week04_Assignment4_Task2_Screenshot4.jpg)
 
 ---
 
 #### Screenshot 5 — Your forked repository page with your username and repository name visible in the URL
 
-Add your screenshot here.
+![Task 2 - Assignment 4 - Screenshot 5](screenshots/Week04_Assignment4_Task2_Screenshot5.jpg)
 
 ---
 
@@ -66,7 +66,7 @@ Add a professional bio to your GitHub profile — and optionally your location, 
 
 #### Screenshot 6 — Your public GitHub profile showing your username and professional bio
 
-Add your screenshot here.
+![Task 3 - Assignment 4 - Screenshot 6](screenshots/Week04_Assignment4_Task3_Screenshot6.jpg)
 
 ---
 
@@ -82,8 +82,7 @@ Add your screenshot here.
 
 Paste your GitHub profile URL here:
 
-`Add your URL here`
-
+https://github.com/kirangandhichitturi
 ---
 
 # Completion Checklist
