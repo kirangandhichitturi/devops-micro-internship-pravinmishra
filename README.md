@@ -14,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Kirangandhi Chitturi |
+| **LinkedIn** | (https://www.linkedin.com/in/kirangandhi-chitturi-9a997919a/) |
+| **Location** | UnitedKingdom |
+| **Background** | DevOps & Senior QA Engineer |
+| **Goal** | Master Devops |
 
 ---
 
