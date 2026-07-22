@@ -151,8 +151,7 @@ Add your screenshot here.
 
 Paste your fork URL here:
 
-`Add your URL here`
-
+https://github.com/kirangandhichitturi/devops-micro-internship-pravinmishra.git
 ---
 
 # Completion Checklist
