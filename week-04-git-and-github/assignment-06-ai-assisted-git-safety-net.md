@@ -27,7 +27,7 @@ Confirm you are working in your own fork, then create a dedicated branch for thi
 
 #### Screenshot 1 — Output of git remote -v and git branch showing the new branch
 
-Add your screenshot here.
+![Task 0 - Assignment 6 - Screenshot 1](screenshots/Week04_Assignment6_Task0_Screenshot1.jpg)
 
 ---
 
@@ -49,7 +49,7 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 
 #### Screenshot 1 — Output of  `git status` showing the staged file on feature/ai-pr-ready
 
-Add your screenshot here.
+![Task 1 - Assignment 6 - Screenshot 1](screenshots/Week04_Assignment6_Task1_Screenshot1.jpg)
 
 ---
 
@@ -71,14 +71,13 @@ Create a tracked, shareable pre-commit hook that blocks a commit containing secr
 
 #### Screenshot 2 — `hooks/pre-commit` open in VS Code showing the full script
 
-Add your screenshot here.
+![Task 2 - Assignment 6 - Screenshot 2](screenshots/Week04_Assignment6_Task2_Screenshot2.jpg)
 
 ---
 
 #### Screenshot 3 — Output of `git config core.hooksPath` confirming it points to `hooks`
 
-Add your screenshot here.
-
+![Task 2 - Assignment 6 - Screenshot 3](screenshots/Week04_Assignment6_Task2_Screenshot3.jpg)
 ---
 
 ### Notes
@@ -105,8 +104,7 @@ Attempt to commit the staged file from Task 1 and show the hook rejecting it.
 
 #### Screenshot 4 — Terminal showing `git commit` rejected with the hook's "BLOCKED" message naming the exact file
 
-Add your screenshot here.
-
+![Task 2 - Assignment 6 - Screenshot 4](screenshots/Week04_Assignment6_Task3_Screenshot4.jpg)
 ---
 
 ### Notes
