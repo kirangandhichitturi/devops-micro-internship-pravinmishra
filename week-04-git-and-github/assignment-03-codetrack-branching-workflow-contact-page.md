@@ -86,8 +86,7 @@ Add the provided Contact Page link to `index.html` and commit it separately usin
 
 #### Screenshot 8 — Browser showing the Contact Page link on the homepage while on `feature/contact-page`
 
-Add your screenshot here.
-
+![Task 4 - Assignment 3 - Screenshot 8](screenshots/Week04_Assignment3_Task4_Screenshot8.jpg)
 ---
 
 # Task 5 — Verify Isolation (Prove the Default Branch Is Unchanged)
@@ -120,13 +119,13 @@ Merge `feature/contact-page` into your default branch and confirm the Contact pa
 
 #### Screenshot 11 — Output of `git merge feature/contact-page`
 
-Add your screenshot here.
+![Task 6 - Assignment 3 - Screenshot 11](screenshots/Week04_Assignment3_Task6_Screenshot11.jpg)
 
 ---
 
 #### Screenshot 12 — Output of `ls` showing `contact.html` after the merge
 
-Add your screenshot here.
+![Task 6 - Assignment 3 - Screenshot 12](screenshots/Week04_Assignment3_Task6_Screenshot12.jpg)
 
 ---
 
@@ -146,7 +145,7 @@ Display the repository history as a graph and locate both feature commits.
 
 #### Screenshot 14 — Full output of `git log --oneline --graph --decorate --all`
 
-Add your screenshot here.
+![Task 7 - Assignment 3 - Screenshot 14](screenshots/Week04_Assignment3_Task7_Screenshot14.jpg)
 
 ---
 
@@ -160,7 +159,7 @@ Delete the merged `feature/contact-page` branch to keep your branch list clean.
 
 #### Screenshot 15 (Optional) — Output showing `feature/contact-page` deleted and no longer listed
 
-Add your screenshot here.
+![Task 8 - Assignment 3 - Screenshot 15](screenshots/Week04_Assignment3_Task8_Screenshot15.jpg)
 
 ---
 
