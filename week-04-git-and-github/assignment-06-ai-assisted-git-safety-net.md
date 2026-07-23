@@ -269,8 +269,7 @@ Publish a LinkedIn post summarizing what you built and what you learned about co
 
 #### LinkedIn Post URL
 
-Add your LinkedIn post URL here...
-
+https://www.linkedin.com/posts/kirangandhi-chitturi-9a997919a_devops-git-github-share-7486163968651313153-xt1p/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog
 ---
 
 ## Key Learnings
