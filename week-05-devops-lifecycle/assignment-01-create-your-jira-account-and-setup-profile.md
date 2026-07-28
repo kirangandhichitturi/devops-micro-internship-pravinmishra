@@ -20,7 +20,7 @@ Create or access your Jira Cloud account and reach the Jira Software workspace s
 
 #### Screenshot 1 — Jira welcome page, dashboard, or main workspace after successful login, with your name or avatar visible
 
-Add your screenshot here.
+![Task 1 — Screenshot 1](screenshots/Week05_Assignment1_Task1_Screenshot1.jpg)
 
 ---
 
@@ -34,7 +34,7 @@ Confirm your email address if Atlassian requests verification.
 
 #### Screenshot 2 (if applicable) — Confirmation screen after email verification, or the inbox showing the Atlassian verification email subject
 
-Add your screenshot here.
+![Task 2 — Screenshot 2](screenshots/Week05_Assignment1_Task2_Screenshot2.jpg)
 
 ---
 
@@ -42,8 +42,7 @@ Add your screenshot here.
 
 If you signed up with Google and no separate email verification was required, state that here instead of a screenshot.
 
-Write your answer here.
-
+Yes i signed up with Google , hence no verification required 
 ---
 
 # Task 3 — Set Up Your Professional Jira Profile
@@ -56,7 +55,7 @@ Update your Jira profile with your full name, a job title or role (e.g. "Aspirin
 
 #### Screenshot 3 — Updated profile page showing your full name, role/title, and bio
 
-Add your screenshot here.
+![Task 3 — Screenshot 3](screenshots/Week05_Assignment1_Task3_Screenshot3.jpg)
 
 ---
 
@@ -70,13 +69,13 @@ Locate the project list and open a project's Board or Backlog, and view Project 
 
 #### Screenshot 4 — "View all projects" page showing at least one project
 
-Add your screenshot here.
+![Task 4 — Screenshot 4](screenshots/Week05_Assignment1_Task4_Screenshot4.jpg)
 
 ---
 
 #### Screenshot 5 — Opened project showing either the Board or Backlog screen
 
-Add your screenshot here.
+![Task 4 — Screenshot 5](screenshots/Week05_Assignment1_Task4_Screenshot5.jpg)
 
 ---
 
