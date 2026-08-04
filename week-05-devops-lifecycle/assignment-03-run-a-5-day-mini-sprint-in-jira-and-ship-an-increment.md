@@ -20,13 +20,13 @@ Create the footer Story (`Add footer with version and deploy date`, 1 point, `fr
 
 #### Screenshot 1 — Sprint 1 created with the Story inside it
 
-Add your screenshot here.
+![Task 1 — Screenshot 1](screenshots/Week05_Assignment3_Task1_Screenshot1.jpg)
 
 ---
 
 #### Screenshot 2 — Active Sprint board showing the Sprint Goal
 
-Add your screenshot here.
+![Task 1 — Screenshot 2](screenshots/Week05_Assignment3_Task1_Screenshot2.jpg)
 
 ---
 
@@ -40,25 +40,25 @@ Add the required footer text (`Pravin Mishra Portfolio v1.0 — Deployed on <DD 
 
 #### Screenshot 3 — Jira board showing the Day 1 Sub-task in Done
 
-Add your screenshot here.
+![Task 2 — Screenshot 3](screenshots/Week05_Assignment3_Task2_Screenshot3.jpg)
 
 ---
 
 #### Screenshot 4 — Successful Git commit output
 
-Add your screenshot here.
+![Task 2 — Screenshot 4](screenshots/Week05_Assignment3_Task2_Screenshot4.jpg)
 
 ---
 
 #### Screenshot 5 — EC2 browser view showing the complete footer text, with the URL visible
 
-Add your screenshot here.
+![Task 2 — Screenshot 5](screenshots/Week05_Assignment3_Task2_Screenshot5.jpg)
 
 ---
 
 #### Screenshot 6 — Jira Story comment showing the Day 1 Daily Scrum update
 
-Add your screenshot here.
+![Task 2 — Screenshot 6](screenshots/Week05_Assignment3_Task2_Screenshot6.jpg)
 
 ---
 
@@ -72,25 +72,25 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 #### Screenshot 7 — Code editor showing the footer and date logic or deployment-time template snippet
 
-Add your screenshot here.
+![Task 3 — Screenshot 7](screenshots/Week05_Assignment3_Task3_Screenshot7.jpg)
 
 ---
 
 #### Screenshot 8 — EC2 browser view showing the updated footer with the current date
 
-Add your screenshot here.
+![Task 3 — Screenshot 8](screenshots/Week05_Assignment3_Task3_Screenshot8.jpg)
 
 ---
 
 #### Screenshot 9 — README snippet documenting the footer and date behavior
 
-Add your screenshot here.
+![Task 3 — Screenshot 9](screenshots/Week05_Assignment3_Task3_Screenshot9.jpg)
 
 ---
 
 #### Screenshot 10 — Jira Story comment showing the Day 2 Daily Scrum update
 
-Add your screenshot here.
+![Task 3 — Screenshot 10](screenshots/Week05_Assignment3_Task3_Screenshot10.jpg)
 
 ---
 
@@ -104,19 +104,19 @@ Improve the footer's spacing, contrast, and readability, then validate it at bot
 
 #### Screenshot 11 — Desktop EC2 view showing the polished footer
 
-Add your screenshot here.
+![Task 4 — Screenshot 11](screenshots/Week05_Assignment3_Task4_Screenshot11.jpg)
 
 ---
 
 #### Screenshot 12 — Mobile responsive view showing the footer remains readable
 
-Add your screenshot here.
+![Task 4 — Screenshot 12](screenshots/Week05_Assignment3_Task4_Screenshot12.jpg)
 
 ---
 
 #### Screenshot 13 — Jira Story comment showing the Day 3 Daily Scrum update
 
-Add your screenshot here.
+![Task 4 — Screenshot 13](screenshots/Week05_Assignment3_Task4_Screenshot13.jpg)
 
 ---
 
@@ -130,7 +130,7 @@ Replace the existing homepage tagline with the required DMI Website call-to-acti
 
 #### Screenshot 14 — EC2 browser view showing "Start your DevOps Journey here" and the clickable "Visit the DMI Website" link
 
-Add your screenshot here.
+![Task 5 — Screenshot 14](screenshots/Week05_Assignment3_Task5_Screenshot14.jpg)
 
 ---
 
@@ -144,25 +144,23 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Screenshot 15 — Burndown Chart for Sprint 1
 
-Add your screenshot here.
+![Task 6 — Screenshot 15](screenshots/Week05_Assignment3_Task6_Screenshot15.jpg)
 
 ---
 
 #### Screenshot 16 — Jira retrospective comment
 
-Add your screenshot here.
+![Task 6 — Screenshot 16](screenshots/Week05_Assignment3_Task6_Screenshot16.jpg)
 
 ---
 
 #### Screenshot 17 — Final EC2 browser view showing the complete footer requirement
 
-Add your screenshot here.
+![Task 6 — Screenshot 17](screenshots/Week05_Assignment3_Task6_Screenshot17.jpg)
 
 ---
 
 #### Demo Video URL
-
-Paste your unlisted YouTube or accessible Google Drive demo-video link here:
 
 `Add your URL here`
 
@@ -186,7 +184,7 @@ Paste your LinkedIn post URL here:
 
 #### LinkedIn Screenshot 1 — Published LinkedIn post showing the post content and at least one required link or proof image
 
-Add your screenshot here.
+![LinkedIn — Screenshot 1](screenshots/Week05_Assignment3_LinkedIn_Screenshot1.jpg)
 
 ---
 
