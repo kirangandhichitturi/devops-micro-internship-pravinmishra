@@ -162,7 +162,7 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Demo Video URL
 
-`Add your URL here`
+https://youtu.be/6GBn-utmVdw
 
 ---
 
@@ -178,7 +178,7 @@ Publish a LinkedIn post about your five-day mini-Sprint, including your GitHub r
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/enAFf7Zf
 
 ---
 
