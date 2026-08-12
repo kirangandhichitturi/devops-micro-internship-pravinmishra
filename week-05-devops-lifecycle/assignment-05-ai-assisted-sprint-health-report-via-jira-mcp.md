@@ -64,7 +64,8 @@ Add your Jira site URL, account email, and API token to `.claude/settings.local.
 
 Why must JIRA_API_TOKEN live in settings.local.json and never in .mcp.json?
 
-Add your answer here
+Your JIRA_API_TOKEN must live in settings.local.json because .mcp.json is a client‑side protocol manifest, not a secrets store.  
+Putting secrets in .mcp.json would expose them to your editor, your repo, and any MCP client — which is a security disaster.
 
 ---
 
