@@ -20,31 +20,31 @@ Build a VPC (10.0.0.0/16) with two public and two private subnets across two Ava
 
 #### Screenshot 1 — VPC details showing CIDR 10.0.0.0/16
 
-Add your screenshot here.
+- ![Task 1 — VPC details showing CIDR 10.0.0.0/16](screenshots/Week06_Assignment5_Task1_Screenshot1.jpg)
 
 ---
 
 #### Screenshot 2 — Subnets list showing four subnets and their Availability Zones
 
-Add your screenshot here.
+- ![Task 1 — Subnets list showing four subnets and their Availability Zones](screenshots/Week06_Assignment5_Task1_Screenshot2.jpg)
 
 ---
 
 #### Screenshot 3 — Public route table showing the Internet Gateway route and both public-subnet associations
 
-Add your screenshot here.
+- ![Task 1 — Public route table showing the Internet Gateway route and both public-subnet associations](screenshots/Week06_Assignment5_Task1_Screenshot3.jpg)
 
 ---
 
 #### Screenshot 4 — Private route table showing the NAT Gateway route and both private-subnet associations
 
-Add your screenshot here.
+- ![Task 1 — Private route table showing the NAT Gateway route and both private-subnet associations](screenshots/Week06_Assignment5_Task1_Screenshot4.jpg)
 
 ---
 
 #### Screenshot 5 — NAT Gateway status showing Available and the Elastic IP
 
-Add your screenshot here.
+- ![Task 1 — NAT Gateway status showing Available and the Elastic IP](screenshots/Week06_Assignment5_Task1_Screenshot5.jpg)
 
 ---
 
@@ -58,19 +58,19 @@ Create `ha-alb-sg` (HTTP public), `ha-web-sg` (HTTP only from `ha-alb-sg`, SSH f
 
 #### Screenshot 6 — ALB Security Group inbound rules
 
-Add your screenshot here.
+- ![Task 2 — ALB Security Group inbound rules](screenshots/Week06_Assignment5_Task2_Screenshot6.jpg)
 
 ---
 
 #### Screenshot 7 — EC2 Security Group inbound rules showing the ALB Security Group reference and SSH from your IP
 
-Add your screenshot here.
+- ![Task 2 — EC2 Security Group inbound rules showing the ALB Security Group reference and SSH from your IP](screenshots/Week06_Assignment5_Task2_Screenshot7.jpg)
 
 ---
 
 #### Screenshot 8 — RDS Security Group inbound rule showing the database port allowed only from the EC2 Security Group
 
-Add your screenshot here.
+- ![Task 2 — RDS Security Group inbound rule showing the database port allowed only from the EC2 Security Group](screenshots/Week06_Assignment5_Task2_Screenshot8.jpg)
 
 ---
 
@@ -84,13 +84,13 @@ Launch a private, Multi-AZ RDS database (MySQL or PostgreSQL) using the private 
 
 #### Screenshot 9 — RDS summary showing Multi-AZ = Yes and Publicly accessible = No
 
-Add your screenshot here.
+- ![Task 3 — RDS summary showing Multi-AZ = Yes and Publicly accessible = No](screenshots/Week06_Assignment5_Task3_Screenshot9.jpg)
 
 ---
 
 #### Screenshot 10 — RDS connectivity section showing the DB Subnet Group and Security Group
 
-Add your screenshot here.
+- ![Task 3 — RDS connectivity section showing the DB Subnet Group and Security Group](screenshots/Week06_Assignment5_Task3_Screenshot10.jpg)
 
 ---
 
@@ -104,13 +104,13 @@ Create a Launch Template whose user data installs the web-server runtime, deploy
 
 #### Screenshot 11 — Launch Template details showing that user data exists, including a visible snippet
 
-Add your screenshot here.
+- ![Task 4 — Launch Template details showing that user data exists, including a visible snippet](screenshots/Week06_Assignment5_Task4_Screenshot11.jpg)
 
 ---
 
 #### Screenshot 12 — A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP
 
-Add your screenshot here.
+- ![Task 4 — A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP](screenshots/Week06_Assignment5_Task4_Screenshot12.jpg)
 
 ---
 
@@ -124,13 +124,13 @@ Create an internet-facing ALB across both public subnets with an HTTP listener a
 
 #### Screenshot 13 — ALB details showing two public subnets in two Availability Zones
 
-Add your screenshot here.
+- ![Task 5 — ALB details showing two public subnets in two Availability Zones](screenshots/Week06_Assignment5_Task5_Screenshot13.jpg)
 
 ---
 
 #### Screenshot 14 — Target group showing at least one healthy target
 
-Add your screenshot here.
+- ![Task 5 — Target group showing at least one healthy target](screenshots/Week06_Assignment5_Task5_Screenshot14.jpg)
 
 ---
 
@@ -144,13 +144,13 @@ Create an Auto Scaling Group from the Launch Template across both public subnets
 
 #### Screenshot 15 — Auto Scaling Group showing desired, minimum, and maximum capacity and the selected subnet Availability Zones
 
-Add your screenshot here.
+- ![Task 6 — Auto Scaling Group showing desired, minimum, and maximum capacity and the selected subnet Availability Zones](screenshots/Week06_Assignment5_Task6_Screenshot15.jpg)
 
 ---
 
 #### Screenshot 16 — EC2 instances list showing two running instances in different Availability Zones
 
-Add your screenshot here.
+- ![Task 6 — EC2 instances list showing two running instances in different Availability Zones](screenshots/Week06_Assignment5_Task6_Screenshot16.jpg)
 
 ---
 
@@ -164,13 +164,13 @@ Confirm the application communicates with the RDS database through the ALB DNS n
 
 #### Screenshot 17 — Browser showing the application loaded through the ALB DNS name with the URL visible
 
-Add your screenshot here.
+- ![Task 7 — Browser showing the application loaded through the ALB DNS name with the URL visible](screenshots/Week06_Assignment5_Task7_Screenshot17.jpg)
 
 ---
 
 #### Screenshot 18 — Proof of a database write through a UI message or database query output
 
-Add your screenshot here.
+- ![Task 7 — Proof of a database write through a UI message or database query output](screenshots/Week06_Assignment5_Task7_Screenshot18.jpg)
 
 ---
 
@@ -186,25 +186,25 @@ Test B: simulate an Availability Zone impact (stop, detach, or reduce desired ca
 
 #### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance; timestamps are helpful
 
-Add your screenshot here.
+- ![Task 8 — EC2 showing the terminated instance and the newly launched instance; timestamps are helpful](screenshots/Week06_Assignment5_Task8_Screenshot19.jpg)
 
 ---
 
 #### Screenshot 20 — Target group showing healthy targets after replacement
 
-Add your screenshot here.
+- ![Task 8 — Target group showing healthy targets after replacement](screenshots/Week06_Assignment5_Task8_Screenshot20.jpg)
 
 ---
 
 #### Screenshot 21 — Evidence that an instance was removed, detached, placed in Standby, or stopped in one Availability Zone
 
-Add your screenshot here.
+- ![Task 8 — Evidence that an instance was removed, detached, placed in Standby, or stopped in one Availability Zone](screenshots/Week06_Assignment5_Task8_Screenshot21.jpg)
 
 ---
 
 #### Screenshot 22 — Browser showing that the ALB DNS endpoint still works during the change
 
-Add your screenshot here.
+- ![Task 8 — Browser showing that the ALB DNS endpoint still works during the change](screenshots/Week06_Assignment5_Task8_Screenshot22.jpg)
 
 ---
 
@@ -218,7 +218,7 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 #### Screenshot 23 — A simple architecture diagram, which may be hand-drawn, or an AWS console overview showing the components
 
-Add your screenshot here.
+- ![Task 9 — A simple architecture diagram, which may be hand-drawn, or an AWS console overview showing the components](screenshots/Week06_Assignment5_Task9_Screenshot23.jpg)
 
 ---
 
@@ -226,19 +226,20 @@ Add your screenshot here.
 
 Summarize the VPC and subnets across the two Availability Zones.
 
-Write your answer here.
+A custom VPC with the CIDR block 10.0.0.0/16 was created across two Availability Zones (eu-west-2a and eu-west-2b) to provide high availability. The architecture consists of two public subnets (10.0.1.0/24 and 10.0.2.0/24) hosting the Application Load Balancer and EC2 web servers, and two private subnets (10.0.11.0/24 and 10.0.12.0/24) hosting the Amazon RDS database. Public subnets route internet traffic through an Internet Gateway, while private subnets use a NAT Gateway for outbound internet access without allowing inbound internet connections.
+
 
 Summarize the ALB and Auto Scaling Group setup.
 
-Write your answer here.
+An internet-facing Application Load Balancer (ALB) is deployed across both public subnets and distributes incoming HTTP requests to healthy EC2 instances using a target group. The web servers are managed by an Auto Scaling Group configured with a desired capacity of 2 instances, a minimum of 2, and a maximum of 4. Instances are launched from a predefined launch template and configured automatically using a user data script. ALB health checks ensure that unhealthy instances are replaced automatically to maintain application availability.
 
 Summarize the private Multi-AZ RDS setup.
 
-Write your answer here.
+The database tier uses an Amazon RDS MySQL db.t3.micro instance configured with Multi-AZ deployment for high availability. The database is placed in a subnet group containing only the two private subnets and is not publicly accessible. Access is restricted through security groups, allowing MySQL traffic (port 3306) only from the EC2 web servers, ensuring the database remains protected from direct internet access.
 
 Summarize the results of both high-availability tests.
 
-Write your answer here.
+The first test verified automatic recovery by terminating a web server instance. The Auto Scaling Group detected the failure, launched a replacement instance within a few minutes, and the Application Load Balancer continued serving user requests without interruption. The second test reduced the Auto Scaling Group to a single instance, leaving one Availability Zone serving all traffic. Continuous testing returned successful HTTP 200 responses throughout the process, demonstrating that the application remained available. After the test, the Auto Scaling Group restored the second instance and rebalanced the workload across both Availability Zones.
 
 ---
 
@@ -254,13 +255,13 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/eWMi2kiS
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+- ![LinkedIn Post Screenshot](screenshots/Week06_Assignment5_Task9_Linkedinpost.jpg)
 
 ---
 
