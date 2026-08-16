@@ -44,7 +44,7 @@ Add your screenshot here.
 
 Write a three-to-four-line paragraph explaining which Azure services you plan to explore first and why.
 
-Write your answer here.
+I plan to start with Azure Virtual Machines, Azure Storage, and Azure Identity because they form the core foundation of any cloud environment. VMs help me practice provisioning compute, Storage teaches how data is managed securely and cost‑effectively, and Identity (IAM) is essential for understanding access control before moving into automation or DevOps workflows.
 
 ---
 
