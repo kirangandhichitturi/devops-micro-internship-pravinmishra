@@ -20,8 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-Add your diagram image or link here.
-
+- ![Task 1 —](screenshots/Week06_Assignment6_Task1_Screenshot1.jpg)
 ---
 
 # Task 2 — AWS Region & Services Used
@@ -32,16 +31,7 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 ### Notes
 
-**Region:**
-
-Write your answer here.
-
----
-
-**Services:**
-
-Write your answer here.
-
+VPC (Virtual Private Cloud) Subnets (6 total: 2 public, 4 private) Internet Gateway Route Tables (Public + Private) EC2 Instances (2: Web Tier + App Tier) Application Load Balancer (2: Public + Internal) Security Groups (5: web-alb-sg, web-sg, internal-alb-sg, app-sg, db-sg) RDS MySQL (Single-AZ) NAT Gateway 
 ---
 
 # Task 3 — Public Entry Point
@@ -56,8 +46,7 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 Paste your public ALB DNS name here:
 
-`Add your URL here`
-
+http://Book-Review-Web-ALB-1375126946.eu-north-1.elb.amazonaws.com
 ---
 
 # Task 4 — Evidence Screenshots
@@ -70,38 +59,33 @@ Capture visual proof of every tier and load balancer.
 
 #### Web EC2
 
-Add your screenshot here.
-
+- ![Task 4 —](screenshots/Week06_Assignment6_Task4_Screenshot1.jpg)
 ---
 
 #### App EC2
 
-Add your screenshot here.
+- ![Task 4 —](screenshots/Week06_Assignment6_Task4_Screenshot2.jpg)
 
 ---
 
 #### Public ALB
 
-Add your screenshot here.
-
+- ![Task 4 —](screenshots/Week06_Assignment6_Task4_Screenshot3.jpg)
 ---
 
 #### Internal ALB
 
-Add your screenshot here.
-
+- ![Task 4 —](screenshots/Week06_Assignment6_Task4_Screenshot4.jpg)
 ---
 
 #### RDS + Replica
 
-Add your screenshot here.
-
+- ![Task 4 —](screenshots/Week06_Assignment6_Task4_Screenshot5.jpg)
 ---
 
 #### App UI proof
 
-Add your screenshot here.
-
+- ![Task 4 —](screenshots/Week06_Assignment6_Task4_Screenshot6.jpg)
 ---
 
 # Task 5 — Summary
@@ -112,23 +96,35 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 ### Notes
 
-**What worked:**
+Once the traffic flow was mapped correctly, the three tiers integrated seamlessly. A browser request first hits the public Application Load Balancer, which forwards it to Nginx on the web server. Nginx serves the Next.js frontend for standard page loads and proxies all /api/ calls to the internal load balancer, which routes them to the Express backend on port 3001. The backend communicates securely with the Multi‑AZ RDS MySQL instance over SSL. On initial startup, the backend automatically created its schema and seeded sample data, giving the app real content from the outset.
 
-Write your answer here.
+The network isolation proved solid during testing. The application servers have no public IPs, the internal load balancer resolves only within the VPC, and the database accepts traffic solely from the app‑tier security group. Browser traces confirmed that every external request reached only the public load balancer — nothing else was exposed.
 
----
+The security group chaining uses group references instead of IP ranges, ensuring continuity even when instances are replaced. The web‑tier group includes both the public load balancer and the web server, requiring a rule that allows port 80 from itself for load‑balancer‑to‑instance traffic. The same logic applies to the app‑tier group and its internal load balancer.
 
-**Issues + fixes:**
+Issues and Fixes
+The frontend’s client‑side rendering dictated the build sequence. Every Next.js page uses "use client", meaning all API calls run in the browser. Consequently, NEXT_PUBLIC_API_URL must resolve to a hostname accessible from the browser — the internal load balancer does not qualify. Pointing it there would break the app entirely. The fix was to reference the public load balancer and let Nginx proxy /api/ requests to the internal ALB. Because Next.js embeds NEXT_PUBLIC_ variables at build time, the public load balancer had to exist before the frontend build could succeed.
 
-Write your answer here.
+After a reload, Nginx briefly returned 404 on API routes before recovering. This happens because Nginx resolves upstream hostnames when worker processes start; a request during reload can miss the new configuration. Retrying confirmed the route was correct. It’s a useful lesson: load‑balancer IPs rotate, and without a resolver directive, Nginx may hold stale addresses indefinitely.
 
----
+The repository included a committed .env file with default credentials — a database password and JWT_SECRET="mysecretkey". These exposed values could allow anyone to forge valid tokens. I replaced them with secure credentials and generated a random 32‑byte JWT secret using openssl.
 
-**Tools/sources used:**
+A read replica cannot be created if automated backups are disabled. Initially, I set backup retention to zero to reduce cost, which blocked replication. Setting retention to one day resolved the issue.
 
-Write your answer here.
+Accessing the private app servers required an indirect route. Since the app subnets have no inbound internet path, I copied the key pair to the web server and connected through it. This works but is poor practice because a private key resides on a public host. The correct approach is AWS Systems Manager Session Manager, which eliminates SSH access and port 22 rules entirely.
 
----
+The NAT Gateway needs an Elastic IP, which seemed to conflict with the “no Elastic IPs” guideline. I interpreted that rule as applying to EC2 instances, ensuring inbound traffic flows through load balancers only. No instance in this architecture uses an Elastic IP; the NAT Gateway’s address is required for outbound connectivity from private tiers.
+
+Tools and References
+AWS CLI v2 — used to build and inspect resources, providing repeatable commands and clearer error messages than the console.
+
+AWS Documentation — referenced for read‑replica backup requirements and ALB scheme behavior.
+
+Application Source Code — reviewing frontend/src/services/api.js, frontend/src/app/page.js, and backend/src/server.js clarified client‑side API calls, port configuration, and Sequelize sync behavior, preventing deployment errors.
+
+Claude — assisted with architectural reasoning and debugging.
+
+Linux Utilities — systemctl, journalctl, getent, and curl at each hop helped isolate failures precisely instead of guessing.
 
 # LinkedIn Post (Required)
 
