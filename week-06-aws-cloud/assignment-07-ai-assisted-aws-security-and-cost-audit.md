@@ -24,7 +24,7 @@ Confirm your AWS CLI is authenticated and can see the S3 bucket, EC2 instance(s)
 
 #### Screenshot 1 — Output of `aws s3 ls`, the EC2 instance table, and the RDS instance table (blur the Account ID if visible)
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week06_Assignment6_Task4_Screenshot6.jpg)
 
 ---
 
