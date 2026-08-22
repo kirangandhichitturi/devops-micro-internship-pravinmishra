@@ -20,8 +20,7 @@ Create `eb-demo-vnet` (10.0.0.0/16) with `web-subnet` (10.0.1.0/24), `app-subnet
 
 #### Screenshot 1 — Subnet configuration screen showing the three subnets and Bastion subnet (if enabled)
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 3 - Screenshot 1](screenshots/Week07_Assignment3_Task1_Screenshot1.jpg)
 ---
 
 # Task 2 — Deploy the Web VM and Install NGINX
