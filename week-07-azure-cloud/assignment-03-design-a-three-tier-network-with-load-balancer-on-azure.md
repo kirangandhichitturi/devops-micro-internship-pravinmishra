@@ -44,8 +44,7 @@ Create Standard Public Load Balancer `web-public-elb` with frontend IP `web-elb-
 
 #### Screenshot 2 — Load Balancer frontend IP configuration
 
-Add your screenshot here.
-
+- ![Task 3 - Assignment 3 - Screenshot 2](screenshots/Week07_Assignment3_Task3_Screenshot2.jpg)
 ---
 
 # Task 4 — Test the Architecture
@@ -58,8 +57,7 @@ Confirm the NGINX default page is reachable through the Load Balancer's public I
 
 #### Screenshot 3 — Browser showing the NGINX welcome page through the Load Balancer Public IP
 
-Add your screenshot here.
-
+- ![Task 4 - Assignment 3 - Screenshot 3](screenshots/Week07_Assignment3_Task4_Screenshot3.jpg)
 ---
 
 # Task 5 — Clean Up Resources
