@@ -30,14 +30,12 @@ Confirm successful Azure Portal access and Locate the required services and subs
 
 #### Screenshot 1 — Azure Portal homepage after successful login
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 1 - Screenshot 1](screenshots/Week07_Assignment1_Task2_Screenshot1.jpg)
 ---
 
 #### Screenshot 2 — "Subscriptions" section showing the "Free Trial" subscription
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 1 - Screenshot 2](screenshots/Week07_Assignment1_Task2_Screenshot2.jpg)
 ---
 
 ### Notes
