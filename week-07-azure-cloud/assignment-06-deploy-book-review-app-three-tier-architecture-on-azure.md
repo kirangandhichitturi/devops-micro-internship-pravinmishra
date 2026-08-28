@@ -65,14 +65,12 @@ Apply least-privilege NSG rules so traffic flows Internet → public entry point
 
 #### Screenshot 6 — NSG rules proving least-privilege access between the tiers
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task3_Screenshot6.jpg)
 ---
 
 #### Screenshot 7 — Key Vault or approved secret-management configuration (without displaying secret values)
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task3_Screenshot7.jpg)
 ---
 
 # Task 4 — Deploy the Presentation (Web) Tier
