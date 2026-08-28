@@ -20,7 +20,7 @@ Create an architecture diagram and implementation plan identifying the presentat
 
 #### Screenshot 1 — Architecture diagram showing the public entry point, three tiers, network boundaries, and traffic flow
 
-Add your screenshot here.
+- ![Task 1 - Assignment 5 - Screenshot 1](screenshots/Week07_Assignment6_Task1_Screenshot1.png)
 
 ---
 
@@ -40,20 +40,19 @@ Create a dedicated Resource Group and VNet with separate subnets for the web, ap
 
 #### Screenshot 3 — Resource Group overview showing the assignment resources
 
-Add your screenshot here.
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task2_Screenshot3.jpg)
 
 ---
 
 #### Screenshot 4 — VNet overview showing the address space and all required subnets
 
-Add your screenshot here.
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task2_Screenshot4.jpg)
 
 ---
 
 #### Screenshot 5 — Route-table or Private DNS evidence where applicable
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task2_Screenshot5.jpg)
 ---
 
 # Task 3 — Configure Security and Secret Management

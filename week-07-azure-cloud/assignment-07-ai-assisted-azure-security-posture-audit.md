@@ -20,7 +20,7 @@ Confirm your Azure CLI is authenticated and can see the VM, network, storage acc
 
 #### Screenshot 1 — `az account show` and `az vm list -d -o table` confirming your subscription and running VM (subscription ID partially blurred)
 
-Add your screenshot here.
+- ![Task 1 - Assignment 7 - Screenshot 1](screenshots/Week07_Assignment7_Task1_Screenshot1.jpg)
 
 ---
 
@@ -34,8 +34,7 @@ Create a `CLAUDE.md` for this workspace that tells Claude what the audit covers 
 
 #### Screenshot 2 — `CLAUDE.md` open in your editor showing the project overview, audit workflow, and safety rules
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 7 - Screenshot 1](screenshots/Week07_Assignment7_Task2_Screenshot2.jpg)
 ---
 
 # Task 3 — Use Agentic AI to Plan the Audit Before Writing the Script
@@ -48,8 +47,7 @@ Ask Claude Code to read `CLAUDE.md` and propose a read-only, four-check audit pl
 
 #### Screenshot 3 — Claude Code showing the four-check plan, with no files created or modified
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 7 - Screenshot 1](screenshots/Week07_Assignment7_Task3_Screenshot3.jpg)
 ---
 
 # Task 4 — Build the Azure Audit Bash Script
@@ -62,14 +60,12 @@ Write a Bash script that runs the four checks from Task 3 using read-only `az` c
 
 #### Screenshot 4 — Your script open in your editor, showing the check functions and the `az` commands they call
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 7 - Screenshot 1](screenshots/Week07_Assignment7_Task4_Screenshot4.jpg)
 ---
 
 #### Screenshot 5 — Output of `bash -n` (no syntax errors) and `ls -l` showing the script is executable
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 7 - Screenshot 1](screenshots/Week07_Assignment7_Task4_Screenshot5.jpg)
 ---
 
 # Task 5 — Run the Script and Review the Baseline Report
@@ -82,8 +78,7 @@ Run the script against your live resources and read the report honestly, even if
 
 #### Screenshot 6 — Script output showing your Full Name and all four checks with a PASS, WARN, or FAIL result
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 7 - Screenshot 1](screenshots/Week07_Assignment7_Task5_Screenshot6.jpg)
 ---
 
 # Task 6 — Create and Run the /azure-audit Skill
@@ -96,14 +91,12 @@ Create a Claude Code skill restricted to read-only tools (no `Write`) that runs 
 
 #### Screenshot 7 — Your skill file's frontmatter showing `allowed-tools` without `Write`
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 7 - Screenshot 1](screenshots/Week07_Assignment7_Task6_Screenshot7.jpg)
 ---
 
 #### Screenshot 8 — `/azure-audit` output showing the baseline findings and Claude's explanation
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 7 - Screenshot 1](screenshots/Week07_Assignment7_Task6_Screenshot8.jpg)
 ---
 
 # Task 7 — Fix a Real Finding and Re-Verify
