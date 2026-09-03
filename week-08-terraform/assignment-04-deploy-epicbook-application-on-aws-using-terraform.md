@@ -24,7 +24,7 @@ Prepare your local environment by installing Terraform, AWS CLI, and the HashiCo
 
 Add a screenshot of the terminal showing successful `terraform version` output.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task0_Screenshot1.jpg)
 
 ---
 
@@ -32,7 +32,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful `aws --version` output.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task0_Screenshot2.jpg)
 
 ---
 
@@ -40,8 +40,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the HashiCorp Terraform extension installed and enabled.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week08_Assignment4_Task0_Screenshot3.jpg)
 ---
 
 # Task 1 — Create the Modular Terraform Project
@@ -80,8 +79,7 @@ terraform-aws-epicbook/
 
 Add a screenshot of the VS Code Explorer showing the complete root project and the `network`, `ec2`, and `rds` module directory structure.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week08_Assignment4_Task1_Screenshot4.jpg)
 ---
 
 # Task 2 — Build the Network Module
@@ -109,7 +107,7 @@ The network module must include:
 
 Add a screenshot of VS Code showing the VPC, public subnet, and two private database subnet configurations.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task2_Screenshot5.jpg)
 
 ---
 
@@ -117,7 +115,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the Internet Gateway, public route table, and route table association.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task2_Screenshot6.jpg)
 
 ---
 
@@ -125,7 +123,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the EC2 and RDS Security Groups, including MySQL access from the EC2 Security Group only.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task2_Screenshot7.jpg)
 
 ---
 
@@ -133,7 +131,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the network module outputs.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task2_Screenshot8.jpg)
 
 ---
 
@@ -161,7 +159,7 @@ The `user_data.sh` script must install the required software without storing dat
 
 Add a screenshot of VS Code showing the EC2 resource and `user_data` configuration.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task3_Screenshot9.jpg)
 
 ---
 
@@ -171,7 +169,7 @@ Add a screenshot of VS Code showing `user_data.sh`.
 
 Ensure that no credentials, passwords, private keys, access tokens, or application secrets are visible.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task3_Screenshot10.jpg)
 
 ---
 
@@ -179,7 +177,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the EC2 module variables and outputs.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task3_Screenshot11.jpg)
 
 ---
 
@@ -205,7 +203,7 @@ The RDS module must include:
 
 Add a screenshot of VS Code showing the DB subnet group and RDS MySQL configuration.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task4_Screenshot12.jpg)
 
 ---
 
@@ -215,7 +213,7 @@ Add a screenshot of VS Code showing `publicly_accessible = false`, the RDS Secur
 
 Ensure that the database password and other sensitive values are hidden.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task4_Screenshot13.jpg)
 
 ---
 
@@ -223,7 +221,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the RDS endpoint output.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task4_Screenshot14.jpg)
 
 ---
 
@@ -239,7 +237,7 @@ Use the root Terraform configuration to call the Network, EC2, and RDS modules a
 
 Add a screenshot of VS Code showing the root `main.tf` with the Network, EC2, and RDS module blocks.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task5_Screenshot15.jpg)
 
 ---
 
@@ -247,7 +245,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing values passed from the Network module to the EC2 and RDS modules.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task5_Screenshot16.jpg)
 
 ---
 
@@ -255,7 +253,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the root EC2 public IP and RDS endpoint outputs.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task5_Screenshot17.jpg)
 
 ---
 
@@ -271,7 +269,7 @@ Initialize the modular Terraform project, validate the configuration, review the
 
 Add a screenshot of the terminal showing successful `terraform init` output.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task6_Screenshot18.jpg)
 
 ---
 
@@ -279,7 +277,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful `terraform validate` output.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task6_Screenshot19.jpg)
 
 ---
 
@@ -287,7 +285,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform plan summary and proposed resources.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task6_Screenshot20.jpg)
 
 ---
 
@@ -295,15 +293,14 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week08_Assignment4_Task6_Screenshot21.jpg)
 ---
 
 ### Screenshot 22 — Terraform Outputs
 
 Add a screenshot showing the EC2 public IP and RDS endpoint returned by `terraform output`.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task6_Screenshot22.jpg)
 
 ---
 
