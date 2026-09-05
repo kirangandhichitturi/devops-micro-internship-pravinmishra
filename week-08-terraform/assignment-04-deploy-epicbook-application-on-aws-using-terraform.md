@@ -316,7 +316,7 @@ Verify that the EC2 and RDS resources were successfully provisioned and confirm 
 
 Add a screenshot of AWS CLI showing the EC2 instance running.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task7_Screenshot23.jpg)
 
 ---
 
@@ -324,7 +324,7 @@ Add your screenshot here.
 
 Add a screenshot of AWS CLI showing that RDS is available and not publicly accessible.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task7_Screenshot24.jpg)
 
 ---
 
@@ -332,8 +332,7 @@ Add your screenshot here.
 
 Add a screenshot of the EC2 terminal showing the required software version checks and the active Nginx service.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week08_Assignment4_Task7_Screenshot25.jpg)
 ---
 
 # Task 8 — Prepare the EpicBook Database
@@ -350,7 +349,7 @@ Add a screenshot of the terminal showing a successful connection from EC2 to Ama
 
 Ensure that the database password is not visible.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task8_Screenshot26.jpg)
 
 ---
 
@@ -358,7 +357,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing the EpicBook tables and imported data.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task8_Screenshot27.jpg)
 
 ---
 
@@ -374,7 +373,7 @@ Install EpicBook dependencies, configure the application to use Amazon RDS, conf
 
 Add a screenshot of the terminal showing successful dependency installation and the `node_modules` directory.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task9_Screenshot28.jpg)
 
 ---
 
@@ -382,7 +381,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing a successful Nginx configuration test and active service status.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task9_Screenshot29.jpg)
 
 ---
 
@@ -390,7 +389,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing EpicBook running or listening on port `8080`.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task9_Screenshot30.jpg)
 
 ---
 
@@ -402,7 +401,7 @@ Verify that EpicBook, EC2, Nginx, and Amazon RDS work together successfully.
 
 ## EC2 Public IP URL
 
-**EC2 Public IP URL:** Add the working EpicBook EC2 public IP URL here
+**EC2 Public IP URL:** http://44.200.46.258
 
 ## Evidence
 
@@ -410,7 +409,7 @@ Verify that EpicBook, EC2, Nginx, and Amazon RDS work together successfully.
 
 Add a screenshot of the browser showing EpicBook using the EC2 public IP.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task10_Screenshot31.jpg)
 
 ---
 
@@ -418,7 +417,7 @@ Add your screenshot here.
 
 Add a screenshot of the browser showing a successful cart or checkout action.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task10_Screenshot32.jpg)
 
 ---
 
@@ -428,7 +427,9 @@ Add a screenshot of the terminal showing the corresponding RDS database record c
 
 Ensure that database credentials and other sensitive values are not visible.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task10_Screenshot33.jpg)
+- ![Task 1 —](screenshots/Week08_Assignment4_Task10_Screenshot33_1.jpg)
+
 
 ---
 
@@ -444,7 +445,7 @@ Remove all AWS resources created by the modular Terraform configuration.
 
 Add a screenshot of the terminal showing successful `terraform destroy` completion.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task11_Screenshot34.jpg)
 
 ---
 
