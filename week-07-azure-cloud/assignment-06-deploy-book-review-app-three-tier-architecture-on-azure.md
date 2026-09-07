@@ -83,13 +83,13 @@ Deploy the Book Review App presentation layer on the approved web-tier compute s
 
 #### Screenshot 8 — Web-tier compute overview showing subnet and availability configuration
 
-Add your screenshot here.
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task4_Screenshot8.jpg)
 
 ---
 
 #### Screenshot 9 — Terminal or service output proving the presentation layer is running
 
-Add your screenshot here.
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task4_Screenshot9.jpg)
 
 ---
 
@@ -103,19 +103,19 @@ Deploy the Book Review App backend privately in the application subnet, configur
 
 #### Screenshot 10 — Application-tier compute overview showing private subnet placement
 
-Add your screenshot here.
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task5_Screenshot10.jpg)
 
 ---
 
 #### Screenshot 11 — Backend process, service, or listening-port evidence
 
-Add your screenshot here.
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task5_Screenshot11.jpg)
 
 ---
 
 #### Screenshot 12 — Internal health-check or API response (without exposing secrets)
 
-Add your screenshot here.
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task5_Screenshot12.jpg)
 
 ---
 
@@ -129,20 +129,18 @@ Create a private Azure managed database (public access disabled), with availabil
 
 #### Screenshot 13 — Database overview showing private connectivity and public access disabled
 
-Add your screenshot here.
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task6_Screenshot13.jpg)
 
 ---
 
 #### Screenshot 14 — Availability, backup, and retention configuration
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task6_Screenshot14.jpg)
 ---
 
 #### Screenshot 15 — Successful schema or connectivity verification (without exposing credentials)
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task6_Screenshot15.jpg)
 ---
 
 # Task 7 — Configure Traffic Management, Availability, and Monitoring
@@ -155,20 +153,17 @@ Configure the approved public entry service with health probes and backend pools
 
 #### Screenshot 16 — Public entry service showing listener, frontend endpoint, and healthy web targets
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task7_Screenshot16.jpg)
 ---
 
 #### Screenshot 17 — Internal application-tier load-balancing or routing configuration where applicable
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task7_Screenshot17.jpg)
 ---
 
 #### Screenshot 18 — Azure Monitor, diagnostic settings, logs, metrics, or alert evidence
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task7_Screenshot18.jpg)
 ---
 
 # Task 8 — Validate the Production-Style Deployment
@@ -181,26 +176,22 @@ Confirm the Book Review App works end to end through the public endpoint, with a
 
 #### Screenshot 19 — Browser showing the Book Review App through the public endpoint
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task8_Screenshot19.jpg)
 ---
 
 #### Screenshot 20 — Proof of successful database-backed read and write operations
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task8_Screenshot20.jpg)
 ---
 
 #### Screenshot 21 — Evidence that private tiers are not publicly accessible
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task8_Screenshot21.jpg)
 ---
 
 #### Screenshot 22 — Availability-test and healthy-target evidence
 
-Add your screenshot here.
-
+- ![Task 1 - Assignment 6 - Screenshot 2](screenshots/Week07_Assignment6_Task8_Screenshot22.jpg)
 ---
 
 #### Public Endpoint
@@ -214,8 +205,110 @@ http://172.198.162.133/
 ### Notes
 
 Summarize what worked, issues encountered and how they were fixed, and the availability/security/secrets/monitoring/backup choices made.
+🚀 Hands-on Azure Project | Three-Tier Application Architecture
 
-Write your answer here.
+I recently completed a hands-on Azure project where I deployed and troubleshot a three-tier Book Review application.
+
+🏗️ Architecture
+
+🌐 Web Tier
+
+• Azure Ubuntu VM
+
+• Next.js frontend
+
+• Nginx reverse proxy
+
+• Public Azure Load Balancer
+
+⚙️ Application Tier
+
+• Private Azure VM
+
+• Node.js / Express API
+
+• Internal Azure Load Balancer
+
+🗄️ Database Tier
+
+• Separate database layer
+
+• Private connectivity
+
+• No direct public exposure
+
+Request flow:
+
+👤 User → Public LB → Nginx → Internal LB → API → Database
+
+The most valuable part of the exercise wasn't just building the environment — it was troubleshooting real issues.
+
+🐛 Issue 1 — Load Balancer routing
+
+The Public Load Balancer was initially forwarding traffic directly to the Next.js application on port 3000, bypassing Nginx.
+
+🔧 Fix: Changed the backend configuration to route traffic through port 80, allowing Nginx to correctly handle frontend and API requests.
+
+🐛 Issue 2 — NSG blocking HTTP
+
+After correcting the Load Balancer, traffic was still timing out.
+
+The Web VM's NSG allowed port 3000 but not port 80.
+
+🔧 Fix: Added an inbound rule for TCP port 80.
+
+🐛 Issue 3 — Browser registration/login returning HTTP 500
+
+Interestingly, the API worked successfully with curl, but browser registration and login failed.
+
+Checking the backend logs revealed:
+
+“CORS policy: Not allowed by server”
+
+The browser was accessing:
+
+http://172.198.162.133
+
+while the backend configuration allowed:
+
+https://172.198.162.133
+
+🔧 Fix: Corrected the ALLOWED_ORIGINS environment variable and restarted the backend.
+
+✅ Browser → Nginx → API communication then worked correctly.
+
+💡 Biggest takeaway
+
+This project reinforced the importance of troubleshooting layer by layer rather than assuming every error is an application-code problem.
+
+I learned to trace requests through:
+
+Load Balancer → NSG → Nginx → API → Environment Variables → Database
+
+This project strengthened my practical skills in:
+
+☁️ Azure
+
+🐧 Linux
+
+🌐 Networking & NSGs
+
+⚖️ Load Balancers
+
+🔀 Nginx
+
+⚙️ Node.js / Express
+
+🗄️ Database architecture
+
+🔐 CORS
+
+🐛 Cloud troubleshooting
+
+Build → Break → Troubleshoot → Learn → Improve. 🚀
+
+#Azure #MicrosoftAzure #CloudComputing #DevOps #ThreeTierArchitecture #AzureNetworking #Linux #Nginx #NodeJS #CloudArchitecture #Troubleshooting
+P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://lnkd.in/e6dYK-Qw
 
 ---
 
