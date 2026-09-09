@@ -109,19 +109,19 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 
 #### Screenshot 9 — Saved report showing the original finding before the fix
 
-Add your screenshot here.
+- ![Task 1 - Assignment 7 - Screenshot 1](screenshots/Week07_Assignment7_Task5_Screenshot6.jpg)
 
 ---
 
 #### Screenshot 10 — Terminal output of the remediation command you ran yourself
 
-Add your screenshot here.
+- ![Task 1 - Assignment 7 - Screenshot 1](screenshots/Week07_Assignment7_Task6_Screenshot7.jpg)
 
 ---
 
 #### Screenshot 11 — Second `/azure-audit` run (or report) showing the finding resolved
 
-Add your screenshot here.
+- ![Task 1 - Assignment 7 - Screenshot 1](screenshots/Week07_Assignment7_Task6_Screenshot8.jpg)
 
 ---
 
@@ -129,8 +129,7 @@ Add your screenshot here.
 
 Compare this assignment to the AWS audit you built in Week 6: which finding categories map to each other across the two clouds, and what stayed exactly the same about the workflow even though the `az`/`aws` commands are completely different?
 
-Add your answer here
-
+While AWS and Azure rely on different services and CLI commands, their core security objectives are identical: identifying exposed access points, preventing public data exposure, and ensuring data encryption at rest. For instance, auditing AWS security groups, S3 buckets, and RDS instances addresses the exact same underlying risks as checking Azure NSGs, Storage Accounts, and MySQL databases. Consequently, the core engineering workflow remains unchanged across both environments. Both platforms follow a strict four-step loop—Gather, Analyze, Human Act, and Verify—where Bash scripts collect deterministic data, AI proposes remediations, engineers execute the changes, and a final audit verifies the fix. Regardless of the cloud provider, the framework relies on the same principles of read-only auditing, human oversight, and evidence-driven verification.
 ---
 
 # Submission Instructions
