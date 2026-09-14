@@ -20,7 +20,7 @@ Import `https://github.com/pravinmishraaws/Azure-Static-Website` into Azure Repo
 
 #### Screenshot 1 — Azure Repos showing the imported repository files with `index.html` visible
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment2_Task1_Screenshot1.jpg)
 
 ---
 
@@ -34,13 +34,14 @@ Provision a Linux VM with Terraform (ports 22/80 open), then use Ansible to inst
 
 #### Screenshot 2 — Terraform output or cloud console showing the running VM and public IP
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment2_Task2_Screenshot2.jpg)
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment2_Task2_Screenshot3.jpg)
+- ![Task 1 —](screenshots/Week10_Assignment2_Task2_Screenshot3_1.jpg)
 
 ---
 
@@ -54,7 +55,7 @@ Create the password-based SSH Service Connection `ubuntu-nginx-ssh` pointing to 
 
 #### Screenshot 4 — SSH Service Connection configuration page showing the connection details and successful validation, with the password hidden
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment2_Task3_Screenshot4.jpg)
 
 ---
 
@@ -68,7 +69,7 @@ Write a pipeline triggered on `main` that checks out the repo, copies files to `
 
 #### Screenshot 5 — Pipeline YAML definition open in the Azure DevOps editor
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment2_Task4_Screenshot5.jpg)
 
 ---
 
@@ -82,13 +83,13 @@ Confirm the pipeline run succeeded (checkout, SSH connection, file transfer, rem
 
 #### Screenshot 6 — Successful Azure DevOps pipeline run log summary
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment2_Task5_Screenshot6.jpg)
 
 ---
 
 #### Screenshot 7 — Browser showing the deployed website with the VM public IP visible
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment2_Task5_Screenshot7.jpg)
 
 ---
 
@@ -96,8 +97,7 @@ Add your screenshot here.
 
 Include the VM public URL. Describe any issue you faced and how you fixed it (e.g. parallelism/agent-pool issues).
 
-Write your answer here.
-
+http://100.27.197.84/  ( I faced issues with the access to root folder where i was not pointing the default root to static website folder)
 ---
 
 # Submission Instructions

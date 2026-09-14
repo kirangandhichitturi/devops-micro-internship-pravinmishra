@@ -24,7 +24,7 @@ Create the assignment workspace, initialize a Git repository, prepare the requir
 
 #### Screenshot 1 — Terminal showing the `ansible-onboarding` path, `ls -la` output, and `git status` confirming the Git repository is on the `main` branch
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment1_Task1_Screenshot1.jpg)
 
 ---
 
@@ -38,8 +38,7 @@ Create an isolated Python virtual environment and install Ansible and the requir
 
 #### Screenshot 2 — Terminal showing the active `(.venv)` environment, `which ansible`, `ansible --version`, `ansible-lint --version`, `yamllint --version`, and `pre-commit --version`
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week09_Assignment1_Task2_Screenshot2.jpg)
 ---
 
 # Task 3 — Configure VS Code for Ansible Development
@@ -52,14 +51,13 @@ Configure Visual Studio Code to use the project’s Python virtual environment a
 
 #### Screenshot 3 — VS Code Extensions panel showing the Ansible, YAML, and Python extensions installed
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment1_Task3_Screenshot3.jpg)
 
 ---
 
 #### Screenshot 4 — VS Code showing `.vscode/settings.json` and `.editorconfig` open side by side, with the required settings clearly visible
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week09_Assignment1_Task3_Screenshot4.jpg)
 ---
 
 # Task 4 — Create the Baseline Ansible Configuration
