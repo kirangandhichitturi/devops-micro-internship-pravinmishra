@@ -20,7 +20,7 @@ Import `https://github.com/pravinmishraaws/my-react-app` into Azure Repos and co
 
 #### Screenshot 1 — Azure Repos showing the imported React project with `package.json` and `src/` visible
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment3_Task1_Screenshot1.jpg)
 
 ---
 
@@ -34,14 +34,13 @@ Provision a new Ubuntu VM with Terraform (ports 22/80 open) and prepare Nginx/`/
 
 #### Screenshot 2 — Terraform output or cloud console showing the new VM and public IP
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment3_Task2_Screenshot2.jpg)
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week10_Assignment3_Task2_Screenshot3.jpg)
 ---
 
 # Task 3 — Create or Update the SSH Service Connection
@@ -54,7 +53,7 @@ Point the `ubuntu-nginx-ssh` Service Connection to the new VM and validate it.
 
 #### Screenshot 4 — SSH Service Connection page showing the new VM connection and successful validation, with the password hidden
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment3_Task3_Screenshot4.jpg)
 
 ---
 
@@ -68,7 +67,7 @@ Create the Build (npm install/build), Test (`npm test -- --watchAll=false`, bloc
 
 #### Screenshot 5 — Azure Pipeline YAML definition with the Build, Test, Publish, and Deploy sections visible
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment3_Task4_Screenshot5.jpg)
 
 ---
 
@@ -82,20 +81,18 @@ Confirm a commit to `main` triggers the pipeline, all four stages succeed, the b
 
 #### Screenshot 6 — Pipeline run summary showing Build, Test, Publish, and Deploy succeeded
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week10_Assignment3_Task5_Screenshot6.jpg)
 ---
 
 #### Screenshot 7 — Terminal or pipeline output showing `/var/www/html` after deployment
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment3_Task5_Screenshot7.jpg)
 
 ---
 
 #### Screenshot 8 — Browser showing the running React application with the public IP visible
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week10_Assignment3_Task5_Screenshot8.jpg)
 ---
 
 # LinkedIn Post (Required)
@@ -110,13 +107,13 @@ Publish a LinkedIn post about the completed assignment, mentioning the Build/Tes
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+(https://www.linkedin.com/posts/activity-7506451564979453953-IMkk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7GBVEBPaI9dIX9QlHmVYP71dbrVJstUog)
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text and at least one link or image
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week10_Assignment3_Task5_LinkedinPost.jpg)
 
 ---
 
