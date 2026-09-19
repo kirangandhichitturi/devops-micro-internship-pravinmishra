@@ -1,6 +1,6 @@
 # Assignment 2 — Deploy a React App on Ubuntu VM Using Nginx
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
