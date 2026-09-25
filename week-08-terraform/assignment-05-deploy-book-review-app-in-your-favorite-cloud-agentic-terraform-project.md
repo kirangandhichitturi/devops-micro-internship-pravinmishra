@@ -133,7 +133,7 @@ Deploy the public and internal load balancers and the Web and Application comput
 
 Add a screenshot showing the Web and Application compute resources in their required subnets.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task3_Screenshot9.jpg)
 
 ---
 
@@ -141,7 +141,7 @@ Add your screenshot here.
 
 Add a screenshot showing the internet-facing public load balancer.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task3_Screenshot10.jpg)
 
 ---
 
@@ -149,7 +149,7 @@ Add your screenshot here.
 
 Add a screenshot showing the private internal load balancer.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task3_Screenshot11.jpg)
 
 ---
 
@@ -157,7 +157,7 @@ Add your screenshot here.
 
 Add a screenshot showing healthy target groups or backend pools.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task3_Screenshot12.jpg)
 
 ---
 
@@ -173,7 +173,7 @@ Deploy a private, highly available managed MySQL database with a read replica an
 
 Add a screenshot showing the managed MySQL database deployment.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task4_Screenshot13.jpg)
 
 ---
 
@@ -181,7 +181,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Multi-AZ or high-availability configuration.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task4_Screenshot14.jpg)
 
 ---
 
@@ -189,7 +189,7 @@ Add your screenshot here.
 
 Add a screenshot showing the read replica configuration.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task4_Screenshot15.jpg)
 
 ---
 
@@ -197,7 +197,7 @@ Add your screenshot here.
 
 Add a screenshot showing that the database is private and accepts MySQL traffic only from the Application Tier.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task4_Screenshot16.jpg)
 
 ---
 
@@ -213,7 +213,7 @@ Validate the Terraform configuration, review the execution plan using both Agent
 
 Add a screenshot showing successful `terraform validate` output.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task5_Screenshot17.jpg)
 
 ---
 
@@ -221,7 +221,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform plan output.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task5_Screenshot18.jpg)
 
 ---
 
@@ -229,7 +229,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task5_Screenshot19.jpg)
 
 ---
 
@@ -245,7 +245,7 @@ Deploy and configure the Book Review App across the Web, Application, and Databa
 
 Add a screenshot showing the Book Review App homepage through the public endpoint.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task6_Screenshot20.jpg)
 
 ---
 
@@ -253,7 +253,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful login or authentication.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task6_Screenshot21.jpg)
 
 ---
 
@@ -289,7 +289,7 @@ Add your screenshot here.
 
 ## Public Application URL
 
-**Public Application URL / DNS:** Add the working public application URL or load-balancer DNS here
+**Public Application URL / DNS:** http://book-review-public-alb-1989924587.eu-west-2.elb.amazonaws.com/
 
 ---
 
