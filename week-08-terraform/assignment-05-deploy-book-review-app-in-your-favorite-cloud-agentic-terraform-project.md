@@ -261,7 +261,7 @@ Add a screenshot showing successful login or authentication.
 
 Add a screenshot showing the book listing or book details.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task6_Screenshot22.jpg)
 
 ---
 
@@ -269,7 +269,7 @@ Add your screenshot here.
 
 Add a screenshot showing the review functionality working successfully.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task6_Screenshot23.jpg)
 
 ---
 
@@ -277,7 +277,7 @@ Add your screenshot here.
 
 Add a screenshot showing that the backend or API is working successfully.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task6_Screenshot24.jpg)
 
 ---
 
@@ -285,7 +285,8 @@ Add your screenshot here.
 
 Add a screenshot showing successful database reads and writes.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task6_Screenshot25.jpg)
+
 
 ## Public Application URL
 
@@ -307,7 +308,7 @@ You do not need to submit your complete Claude Code conversation history. Includ
 
 Add a screenshot showing one useful example of AI-assisted Terraform generation or improvement.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task7_Screenshot26.jpg)
 
 ---
 
@@ -315,7 +316,7 @@ Add your screenshot here.
 
 Add a screenshot showing one structured architecture or security review result.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task7_Screenshot27.jpg)
 
 ---
 
@@ -323,7 +324,7 @@ Add your screenshot here.
 
 Add a screenshot showing one AI-assisted troubleshooting interaction based on collected evidence.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task7_Screenshot28.jpg)
 
 ---
 
