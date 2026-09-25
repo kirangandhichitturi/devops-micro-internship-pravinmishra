@@ -31,7 +31,7 @@ Prepare the Book Review App project and configure the provided Claude Code Agent
 
 Add a screenshot of the project `CLAUDE.md` showing the three-tier architecture, security boundaries, Terraform requirements, and human-approval rules.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task0_Screenshot1.jpg)
 
 ---
 
@@ -39,15 +39,14 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform Engineer subagent configuration.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week08_Assignment5_Task0_Screenshot2.jpg)
 ---
 
 ### Screenshot 3 — Architecture and Security Reviewer Subagent
 
 Add a screenshot showing the Architecture and Security Reviewer subagent configuration.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task0_Screenshot3.jpg)
 
 ---
 
@@ -55,7 +54,7 @@ Add your screenshot here.
 
 Add a screenshot showing Terraform MCP connected and available.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task0_Screenshot4.jpg)
 
 ---
 
@@ -63,8 +62,7 @@ Add your screenshot here.
 
 Add a screenshot showing the configured Claude Code validation hooks.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week08_Assignment5_Task0_Screenshot5.jpg)
 ---
 
 # Task 1 — Design the Three-Tier Architecture
@@ -90,7 +88,7 @@ The diagram must show:
 
 ## Architecture Diagram
 
-Add the completed architecture diagram here.
+- ![Task 1 —](screenshots/Week08_Assignment5_Task1_Screenshot1.jpg)
 
 ---
 
@@ -106,24 +104,21 @@ Create the modular Terraform project and implement the network and security laye
 
 Add a screenshot showing the modular Terraform project structure.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week08_Assignment5_Task2_Screenshot6.jpg)
 ---
 
 ### Screenshot 7 — Six-Subnet Architecture
 
 Add a screenshot showing the six-subnet architecture across two availability locations.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week08_Assignment5_Task2_Screenshot7.jpg)
 ---
 
 ### Screenshot 8 — Public and Private Tier Separation
 
 Add a screenshot showing the public and private tier separation, including routing and security boundaries.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week08_Assignment5_Task2_Screenshot8.jpg)
 ---
 
 # Task 3 — Build the Load-Balancing and Compute Layers
@@ -367,67 +362,69 @@ Reflect on the architecture, Terraform implementation, and Agentic AI workflow. 
 
 ### 1. Why did you separate the Web, Application, and Database tiers?
 
-Write your answer here.
+I separated the application into Web, Application, and Database tiers to improve security, scalability, and maintainability. Each tier has a specific responsibility and its own security boundaries. Internet traffic reaches the Web Tier first, application requests are forwarded to the private Application Tier, and only the Application Tier can communicate with the database.
 
 ### 2. Why is the Application Tier private?
 
-Write your answer here.
+The Application Tier is private because users do not need direct access to the backend servers. API traffic reaches the Application Tier through the internal load balancer. This reduces the attack surface and prevents the backend EC2 instances from being directly exposed to the internet.
 
 ### 3. Why is MySQL private?
 
-Write your answer here.
+MySQL contains application data and should not be directly accessible from the internet. I deployed RDS in private database subnets and restricted port 3306 so that database connections come only from the Application Tier. This provides an additional security boundary around the data layer.
 
 ### 4. Why are multiple Availability Zones used?
 
-Write your answer here.
+I used two Availability Zones to improve availability and fault tolerance. The Web, Application, and Database subnets are distributed across the two zones so that the architecture does not depend on a single availability location. The load balancers can also distribute requests across resources in both zones.
 
 ### 5. What is the difference between Multi-AZ/high availability and a read replica?
 
-Write your answer here.
+Multi-AZ is primarily used for high availability and failover. If the primary database has an infrastructure failure, AWS can fail over to the standby database. A read replica is mainly used to provide another database copy that can serve read workloads and reduce load on the primary database. Therefore, Multi-AZ focuses on availability, while a read replica is primarily useful for read scaling.
 
 ## Terraform
 
 ### 6. How did you divide your Terraform into modules?
 
-Write your answer here.
+I divided the Terraform configuration into logical modules for networking, security, load balancing, compute, and database resources. The networking module manages the VPC, six subnets and routing. The security module manages tier-specific security groups. The load-balancing module manages the public and internal load balancers and target groups. The compute module manages the Web and Application EC2 instances, and the database module manages RDS and the read replica.
 
 ### 7. How do the modules communicate through variables and outputs?
 
-Write your answer here.
+Modules expose required information through outputs, and other modules receive those values through input variables. For example, subnet IDs produced by the networking module are passed to the compute and load-balancing modules. Security group IDs are passed to the resources that require them, and target group ARNs are passed to the compute module so EC2 instances can be registered with the appropriate target groups.
 
 ### 8. What did you specifically check in `terraform plan`?
 
-Write your answer here.
+I reviewed the plan before applying it to confirm which resources would be created, modified, replaced, or destroyed. I specifically checked for unexpected replacements and destructive changes. During the project, a plan showed that the RDS primary instance would be replaced because of a username change, so I investigated and corrected the variable configuration instead of applying the plan. I also reviewed security-group changes before applying them.
 
 ## Agentic AI
 
 ### 9. What was the purpose of `CLAUDE.md`?
 
-Write your answer here.
+CLAUDE.md provided project-specific instructions and context to Claude Code. It documented the required three-tier architecture, security boundaries, Terraform expectations, validation requirements, and the rule that infrastructure-changing operations such as terraform apply required human review and approval.
+
 
 ### 10. What work did the Terraform Engineer subagent perform?
 
-Write your answer here.
+The Terraform Engineer subagent assisted with designing and improving the Terraform configuration. It helped structure resources into modules, work with variables and outputs, identify Terraform configuration problems, and review the implementation against the required architecture. The generated Terraform was still reviewed before any infrastructure changes were applied.
+
 
 ### 11. What did the Architecture and Security Reviewer identify?
 
-Write your answer here.
+The Architecture and Security Reviewer checked tier separation, network exposure, routing, load-balancer design, security-group rules, database privacy, availability, and Terraform structure. An important focus was ensuring that the Application and Database tiers remained private and that ports such as 3001 and 3306 were restricted to the components that actually required access.
 
 ### 12. Why did you use Terraform MCP instead of relying only on Claude's existing Terraform knowledge?
 
-Write your answer here.
+I used Terraform MCP to give the Agentic AI workflow access to current Terraform information rather than relying only on knowledge already available to the model. This helped validate resource configuration and implementation decisions against current Terraform provider documentation and reduced the risk of using outdated syntax or assumptions.
 
 ### 13. What was the purpose of your validation hooks?
 
-Write your answer here.
+The validation hooks provided deterministic checks on the Terraform configuration. They helped enforce steps such as formatting and validation instead of relying only on AI review. This allowed issues to be detected earlier and ensured that the configuration passed basic Terraform checks before planning or applying infrastructure changes.
 
 ### 14. Describe one real issue Claude helped you troubleshoot.
 
-Write your answer here.
+One issue occurred when the backend could connect to the RDS server but returned Unknown database 'book_review_db'. We compared the backend environment configuration with the Terraform database configuration and discovered that Terraform had created the database as bookreview, while the application was trying to use book_review_db. After correcting the database name used by the backend, Sequelize successfully connected, created the schema, inserted the sample data, and the API started successfully on port 3001.
 
 ### 15. Describe one recommendation you reviewed, modified, or rejected instead of accepting blindly.
 
-Write your answer here.
+I did not apply Terraform changes automatically just because they were suggested. For example, one Terraform plan showed that the primary RDS instance would be destroyed and recreated because the database username was changing. Instead of accepting the change, I inspected the plan and Terraform state, identified the variable issue, corrected the configuration, and generated another plan. The revised plan showed no database destruction. This demonstrated that AI recommendations and Terraform plans were reviewed using human judgment before infrastructure changes were approved.
 
 ---
 

@@ -467,7 +467,7 @@ Add your screenshot here.
 
 ## LinkedIn Post URL
 
-**LinkedIn Post URL:** Add your LinkedIn post URL here
+https://lnkd.in/p/ejd3yZRN
 
 ---
 
