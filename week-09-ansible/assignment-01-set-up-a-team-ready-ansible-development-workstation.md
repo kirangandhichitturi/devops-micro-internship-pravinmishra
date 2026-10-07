@@ -70,13 +70,13 @@ Create a reusable `ansible.cfg` file containing the default settings that will b
 
 #### Screenshot 5 — `ansible.cfg` open in VS Code or another editor, showing the complete configuration
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment1_Task4_Screenshot5.jpg)
 
 ---
 
 #### Screenshot 6 — Terminal showing `ansible --version` with the `ansible.cfg` path and the output of `ansible-config dump --only-changed`
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment1_Task4_Screenshot6.jpg)
 
 ---
 
@@ -90,7 +90,7 @@ Prepare SSH key authentication, load the key into the SSH agent, configure reusa
 
 #### Screenshot 7 — Terminal showing `ssh-add -l` with the ED25519 key loaded and the SSH configuration verification output
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment1_Task5_Screenshot7.jpg)
 
 ---
 
@@ -154,25 +154,25 @@ Answer the following in your own words:
 
 **1. What is one feature that makes your workstation setup team-friendly?**
 
-Add your answer here.
+The project uses a consistent Git and pre-commit configuration so that all team members automatically run the same linting and validation checks before committing code.
 
 ---
 
 **2. What is one pitfall you avoided while completing the setup?**
 
-Add your answer here.
+I avoided installing Ansible and Python packages globally. Instead, I used a Python virtual environment (.venv), which prevents dependency conflicts and avoids modifying the system-managed Python environment.
 
 ---
 
 **3. Why should Ansible be installed inside a Python virtual environment?**
 
-Add your answer here.
+Installing Ansible inside a Python virtual environment isolates Ansible and its dependencies from the system Python installation. This allows the project to use specific package versions consistently without causing conflicts with other Python applications or system packages.
 
 ---
 
 **4. Why must SSH private keys and `.venv/` remain outside version control?**
 
-Add your answer here.
+SSH private keys must not be committed because they contain sensitive credentials that could allow unauthorized access to systems. The .venv/ directory should also remain outside version control because it contains machine-specific dependencies, can be large, and can be recreated from the project's dependency files such as requirements.txt.
 
 ---
 

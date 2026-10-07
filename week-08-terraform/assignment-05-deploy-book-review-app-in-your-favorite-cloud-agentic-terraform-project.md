@@ -8,8 +8,8 @@ Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 **Full Name:** Kirangandhi Chitturi  
 **Cloud Platform:** AWS or Azure  
-**GitHub Repository URL:** Add your repository URL here  
-**Public Application URL / Load-Balancer DNS:** Add the public URL or DNS here
+**GitHub Repository URL:** https://github.com/kirangandhichitturi/devops-micro-internship-pravinmishra/tree/main
+**Public Application URL / Load-Balancer DNS:** http://book-review-public-alb-1989924587.eu-west-2.elb.amazonaws.com/
 
 ---
 
@@ -439,7 +439,7 @@ Write the post in your own words, include at least one project image or other pr
 
 ## LinkedIn Post URL
 
-**LinkedIn Post URL:** Add your LinkedIn post URL here
+**LinkedIn Post URL:**(https://lnkd.in/p/ejd3yZRN)
 
 ---
 

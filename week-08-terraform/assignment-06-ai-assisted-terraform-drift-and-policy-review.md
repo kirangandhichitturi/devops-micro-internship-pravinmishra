@@ -6,8 +6,8 @@ Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ## Student Details
 
-**Full Name:** Add your full name here  
-**GitHub Repository/Folder URL:** Add your GitHub URL here
+**Full Name:** Kirangandhi Chitturi  
+**GitHub Repository/Folder URL:** https://github.com/kirangandhichitturi/devops-micro-internship-pravinmishra/tree/main
 
 ---
 
@@ -40,7 +40,7 @@ Confirm that your Terraform configuration and deployed infrastructure are curren
 
 Add a screenshot of `terraform plan` showing no pending changes.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment6_Task1_Screenshot1.jpg)
 
 ---
 
@@ -48,17 +48,16 @@ Add your screenshot here.
 
 Add a screenshot of the folder structure showing `AI Assignment/`, `reports/`, and the Terraform project.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment6_Task7_Screenshot2.jpg)
 
 ## Questions
 
 ### 1. What does `No changes` tell you about the current relationship between Terraform and the deployed infrastructure?
-
-Write your answer here.
+No changes confirms that the Terraform configuration, Terraform state, and deployed AWS infrastructure are currently aligned, with no pending changes detected by Terraform.
 
 ### 2. Why is a clean baseline important before introducing a test change?
 
-Write your answer here.
+A clean baseline establishes a known starting point before introducing a controlled test change. This ensures that any difference detected later can be clearly attributed to the intentional test rather than a pre-existing infrastructure or configuration difference.
 
 ---
 
@@ -74,17 +73,17 @@ Provide Claude Code with clear project context, evidence requirements, and safet
 
 Add a screenshot of `CLAUDE.md` open in VS Code showing the Project Overview, Review Workflow, Safety Rules, and Output Rules.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment6_Task7_Screenshot3.jpg)
 
 ## Questions
 
 ### 1. Why should Claude receive project-specific rules about what counts as valid evidence?
 
-Write your answer here.
+Project-specific evidence rules ensure that Claude bases its analysis on reliable Terraform evidence instead of assumptions. They also make the review process consistent, reproducible, and relevant to the actual infrastructure.
 
 ### 2. Why must the human remain responsible for running `terraform apply`?
 
-Write your answer here.
+A human must remain responsible for terraform apply because it can make real infrastructure changes that may affect availability, security, data, and cost. Human review provides an intentional approval step before any infrastructure-changing action is executed.
 
 ### 3. Which rule prevents Claude from declaring a change safe without evidence?
 
