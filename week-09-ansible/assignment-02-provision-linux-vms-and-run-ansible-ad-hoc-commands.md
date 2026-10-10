@@ -163,13 +163,12 @@ This task proves that the inventory is working and that Ansible can control mult
 
 #### Screenshot 16 — Output of `ansible all -i inventory.ini -m apt -a "name=htop state=present update_cache=yes" --become`
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week09_Assignment2_Task6_Screenshot16.jpg)
 ---
 
 #### Screenshot 17 — Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx"`
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment2_Task6_Screenshot17.jpg)
 
 ---
 
@@ -197,37 +196,45 @@ Answer the following in your own words:
 
 **1. What is the purpose of an Ansible inventory file?**
 
-Add your answer here.
+An Ansible inventory file contains the details of servers that Ansible needs to manage, including their IP addresses, hostnames and SSH connection settings. It helps organise servers into groups and allows us to execute commands on multiple servers without connecting to each one manually
 
 ---
 
 **2. What is the difference between the `web`, `app`, and `db` groups in your inventory?**
 
-Add your answer here.
+In my assignment, I created three groups based on server roles:
+- web: Contains the web server (web01), where Nginx is installed.
+- app: Contains the application server (app01), intended for running application services.
+- db: Contains the database server (db01), intended for database-related operations.
+These groups allow Ansible to target specific servers instead of running every command on all servers.
 
 ---
 
 **3. What does the Ansible `ping` module verify?**
 
-Add your answer here.
+The Ansible ping module verifies that Ansible can successfully connect to managed servers through SSH and execute Python modules on them. If the connection is successful, it returns pong. Unlike a normal network ping, it does not use ICMP.
 
 ---
 
 **4. Why do package installation commands require `--become`?**
 
-Add your answer here.
+The --become option allows Ansible to execute commands with elevated privileges, usually as the root user through sudo. Installing packages like Nginx or htop and managing system services require administrator permissions, which a normal user may not have.
 
 ---
 
 **5. When would you use an ad-hoc command instead of a playbook?**
 
-Add your answer here.
+I would use an Ansible ad-hoc command for quick, one-time tasks such as checking server uptime, testing connectivity, installing a package or restarting a service.
+For complex tasks involving multiple steps or repeated deployments, I would use an Ansible playbook because it provides better automation and reusability.
 
 ---
 
 **6. What is one challenge you faced while setting up SSH or inventory, and how did you fix it?**
 
-Add your answer here.
+During my assignment, I faced an SSH host key verification error while running the Ansible ping command across three AWS EC2 instances.
+The web01 server connected successfully, but app01 and db01 returned Host key verification failed.
+I identified that the SSH host keys of these servers had not yet been trusted by my Ansible controller. To resolve this, I connected to the servers manually using SSH and accepted their host keys after verification, allowing them to be stored in the known_hosts file.
+This helped me understand the importance of SSH authentication, host key verification and secure communication between Ansible controllers and managed servers
 
 ---
 
