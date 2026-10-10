@@ -52,7 +52,15 @@ Add both Ubuntu servers to the Ansible inventory.
 Copy and paste the complete contents of your `inventory.ini` file below:
 
 ```ini
-Add your inventory.ini content here.
+[web]
+web1 ansible_host=35.179.143.175
+web2 ansible_host=18.170.121.81
+
+[all:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=~/.ssh/ansible_lab
+ansible_python_interpreter=/usr/bin/python3
+
 ```
 
 ---
