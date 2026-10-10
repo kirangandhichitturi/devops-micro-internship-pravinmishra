@@ -463,7 +463,7 @@ Write the post in your own words and include at least one deployment screenshot 
 
 Add a screenshot of the published LinkedIn post showing the post and at least one deployment image or other proof.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment4_Task11_Screenshot35.jpg)
 
 ## LinkedIn Post URL
 

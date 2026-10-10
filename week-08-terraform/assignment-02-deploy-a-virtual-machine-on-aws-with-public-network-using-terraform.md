@@ -165,7 +165,7 @@ Share your AWS Terraform deployment progress by using either Facebook or WhatsAp
 
 #### Screenshot 11 — Published Facebook post/Story or WhatsApp Status showing Terraform deployment progress and DMI Leaderboard progress link
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week08_Assignment2_Task5_Screenshot10.jpg)
 
 > Use Screenshot 6 — successful `terraform apply` output — as the assignment image for your post or Status. Ensure that no AWS credentials, private keys, account IDs, private phone numbers, or personal messages are visible.
 
