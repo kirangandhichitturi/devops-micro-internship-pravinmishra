@@ -104,7 +104,7 @@ Configure your Git identity and install pre-commit hooks that validate YAML and 
 
 #### Screenshot 8 — Terminal showing your Git full name, Git email, default branch, successful `pre-commit install` output, and `.git/hooks/pre-commit`
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment1_Task6_Screenshot8.jpg)
 
 ---
 
@@ -118,13 +118,12 @@ Verify that Ansible, the linting tools, Git hooks, SSH agent, and Git ignore rul
 
 #### Screenshot 9 — Terminal showing `pre-commit run --all-files` completing successfully
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week09_Assignment1_Task7_Screenshot9.jpg)
 ---
 
 #### Screenshot 10 — Terminal showing `ansible --version` with the project configuration path and `ssh-add -l` with the ED25519 key loaded
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment1_Task7_Screenshot10.jpg)
 
 ---
 
@@ -138,14 +137,13 @@ Document the completed Ansible workstation setup and create a reusable checklist
 
 #### Screenshot 11 — Terminal showing the final `ansible-onboarding` project structure
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment1_Task8_Screenshot11.jpg)
 
 ---
 
 #### Screenshot 12 — VS Code Markdown preview showing your full name, project summary, and part of the “New Machine? Do This” checklist
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week09_Assignment1_Task8_Screenshot12.jpg)
 ---
 
 # Assignment Questions

@@ -12,6 +12,7 @@ Terraform will create the Azure Virtual Machine and networking resources. Ansibl
 
 ---
 
+
 # Task 1 — Create the Project Structure
 
 ## Goal
@@ -22,13 +23,8 @@ Create separate directories and files for the Terraform infrastructure and Ansib
 
 #### Screenshot 1 — Terminal or VS Code showing the complete `mini-finance` project structure
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment4_Task1_Screenshot1.jpg)
 
----
-
-### Notes
-
-Add your task notes here.
 
 ---
 
@@ -42,21 +38,13 @@ Use Terraform to provision an Ubuntu Virtual Machine with the required Azure net
 
 #### Screenshot 2 — Terraform code showing the `Allow-SSH` rule for port `22` and the `Allow-HTTP` rule for port `80`
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment4_Task2_Screenshot2.jpg)
 
 ---
 
 #### Screenshot 3 — Terraform code showing the association between `nsg-mini-finance` and `nic-mini-finance`
 
-Add your screenshot here.
-
----
-
-### Notes
-
-Add your task notes here.
-
----
+- ![Task 1 —](screenshots/Week09_Assignment4_Task2_Screenshot3.jpg)
 
 # Task 3 — Initialize and Apply the Terraform Configuration
 
@@ -96,13 +84,6 @@ Confirm that the Ansible controller can connect to the Terraform-provisioned Azu
 
 Add your screenshot here.
 
----
-
-### Notes
-
-Add your task notes here.
-
----
 
 # Task 5 — Create the Ansible Inventory and Verify Connectivity
 
@@ -122,9 +103,14 @@ Add your screenshot here.
 
 Copy and paste the complete contents of your `ansible/inventory.ini` file below:
 
-```ini
-Add your inventory.ini content here.
-```
+[web]
+web1 ansible_host=35.179.143.175
+web2 ansible_host=18.170.121.81
+
+[all:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=~/.ssh/ansible_lab
+ansible_python_interpreter=/usr/bin/python3
 
 ---
 
@@ -167,9 +153,102 @@ Add your screenshot here.
 
 Copy and paste the complete contents of your `ansible/site.yml` file below:
 
-```yaml
-Add your site.yml content here.
-```
+---
+# PLAY 1 - Install dependencies
+- name: Play 1 - Install Nginx Git and rsync
+  hosts: web
+  become: true
+
+  tasks:
+    - name: Install required packages
+      ansible.builtin.apt:
+        name:
+          - nginx
+          - git
+          - rsync
+        state: present
+        update_cache: true
+        cache_valid_time: 3600
+
+    - name: Start and enable Nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true
+
+# PLAY 2 - Deploy Mini Finance
+- name: Play 2 - Deploy Mini Finance website
+  hosts: web
+  become: true
+
+  vars:
+    repo_url: "https://github.com/kirangandhichitturi/mini_finance.git"
+    clone_dir: /opt/mini-finance-source
+    website_dir: /var/www/html
+
+  tasks:
+    - name: Clone Mini Finance repository
+      ansible.builtin.git:
+        repo: "{{ repo_url }}"
+        dest: "{{ clone_dir }}"
+        version: main
+        update: true
+
+    - name: Deploy website files using rsync
+      ansible.builtin.command:
+        argv:
+          - rsync
+          - -a
+          - --checksum
+          - --delete
+          - --exclude=.git/
+          - --itemize-changes
+          - "{{ clone_dir }}/"
+          - "{{ website_dir }}/"
+      register: rsync_result
+      changed_when: rsync_result.stdout | length > 0
+      notify: Reload Nginx
+
+    - name: Set website ownership
+      ansible.builtin.file:
+        path: "{{ website_dir }}"
+        owner: www-data
+        group: www-data
+        recurse: true
+        state: directory
+
+  handlers:
+    - name: Reload Nginx
+      ansible.builtin.service:
+        name: nginx
+        state: reloaded
+
+# PLAY 3 - Verify both websites
+- name: Play 3 - Verify Mini Finance deployment
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Verify HTTP 200 from both servers
+      ansible.builtin.uri:
+        url: "http://{{ hostvars[item].ansible_host }}"
+        method: GET
+        status_code: 200
+        return_content: true
+        timeout: 30
+      loop: "{{ groups['web'] }}"
+      register: website_results
+      changed_when: false
+
+    - name: Assert successful deployment
+      ansible.builtin.assert:
+        that:
+          - item.status == 200
+          - "'Mini Finance' in item.content"
+        success_msg: "{{ item.item }} - Mini Finance verified"
+        fail_msg: "{{ item.item }} - Website verification failed"
+      loop: "{{ website_results.results }}"
 
 ---
 
@@ -223,9 +302,9 @@ Add your screenshot here.
 
 Add your deployed website URL below:
 
-```text
-http://<PUBLIC_IP>
-```
+**Server 1:** http://35.179.143.175
+
+**Server 2:** http://18.170.121.81
 
 ---
 
@@ -259,7 +338,7 @@ Add your README.md content here.
 
 #### Screenshot 15 — Published LinkedIn post showing the text and at least one deployment screenshot
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment4_LinkedinPost.jpg)
 
 ---
 
@@ -267,7 +346,7 @@ Add your screenshot here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/eS2pmvZD
 
 ---
 
@@ -275,14 +354,13 @@ Paste your LinkedIn post URL here:
 
 **One challenge you faced and how you fixed it:**
 
-Add your answer here.
+During the assignment, I encountered a Terraform error because the controller_ip variable required a valid CIDR block, but I initially provided only my public IP address. I resolved this by adding /32 to the IP address and passing the correct value to Terraform. This helped me understand how AWS Security Groups use CIDR notation to restrict SSH access securely.
 
 ---
 
 **One real-world example where you can use this learning:**
 
-Add your answer here.
-
+In a real-world environment, I can use Terraform and Ansible together to automate the deployment of websites across multiple cloud servers. Terraform can provision AWS infrastructure and configure security groups, while Ansible can install Nginx, retrieve application code from GitHub, deploy website files using rsync, and verify successful deployment. This approach reduces manual work, improves consistency, and makes deployments faster and more reliable.
 ---
 
 # Assignment Questions
@@ -291,61 +369,61 @@ Answer the following in your own words:
 
 **1. What did you provision using Terraform in this assignment?**
 
-Add your answer here.
+I used Terraform to provision AWS EC2 instances, security groups, and the required networking configuration. Terraform automated the infrastructure setup, including allowing SSH access on port 22 from my public IP address and HTTP access on port 80 from the internet.
 
 ---
 
 **2. What did Ansible configure and deploy in this assignment?**
 
-Add your answer here.
+I used Ansible to configure the EC2 servers, install the required packages and Nginx web server, deploy the website files, and verify that the website was accessible. This helped automate the server configuration without manually running commands on each instance.
 
 ---
 
 **3. Why is SSH access on port `22` restricted to your public IP address?**
 
-Add your answer here.
+SSH access is restricted to my public IP address for security reasons. This prevents unknown users on the internet from attempting to connect to the EC2 instances and reduces the risk of unauthorised access.
 
 ---
 
 **4. Why is HTTP port `80` open to the internet?**
 
-Add your answer here.
+HTTP port 80 is open to the internet so users can access the deployed website through a web browser. It allows incoming web traffic while SSH access remains restricted for security.
 
 ---
 
 **5. What is the purpose of the Ansible inventory file?**
 
-Add your answer here.
+The Ansible inventory file contains information about the servers that Ansible needs to manage, such as their IP addresses, SSH usernames, and connection settings. It helps Ansible identify which servers to connect to and execute the playbooks against.
 
 ---
 
 **6. Why does the playbook use separate plays for install, deploy, and verify?**
 
-Add your answer here.
+Using separate plays makes the automation easier to understand, maintain, and troubleshoot. The installation play prepares the server, the deployment play copies the website files, and the verification play checks whether the website is working. This separation makes it easier to identify and fix issues.
 
 ---
 
 **7. Why is `rsync` useful when deploying website files?**
 
-Add your answer here.
+rsync is useful because it efficiently transfers website files from the local machine to the remote server. It copies only new or modified files instead of transferring everything again, which saves time and reduces unnecessary data transfer.
 
 ---
 
 **8. What does the Ansible `uri` module verify in this assignment?**
 
-Add your answer here.
+The Ansible uri module verifies that the deployed website is accessible over HTTP and returns the expected response, such as HTTP status code 200 OK. This confirms that Nginx is serving the website successfully.
 
 ---
 
 **9. What issue did you face during this assignment, and how did you fix it?**
 
-Add your answer here.
+During the assignment, I encountered a Terraform error because the EC2 instance configuration referenced an undeclared security group resource named aws_security_group.web_http. I fixed this by reviewing the Terraform configuration, correcting the security group reference, and ensuring the required security group was defined. I then validated the configuration and continued with the deployment.
 
 ---
 
 **10. What did you learn from using Terraform and Ansible together?**
 
-Add your answer here.
+I learned how Terraform and Ansible work together to automate infrastructure provisioning and application deployment. Terraform handles creating cloud resources, while Ansible handles server configuration, software installation, and application deployment. Using both tools makes the process more consistent, repeatable, and easier to manage, reducing manual effort and configuration errors.
 
 ---
 
