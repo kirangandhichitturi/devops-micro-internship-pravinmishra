@@ -56,13 +56,12 @@ Format and validate the Terraform configuration, review the execution plan, and 
 
 #### Screenshot 4 — End of the `terraform apply` output showing `Apply complete!` with no errors
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week09_Assignment4_Task3_Screenshot4.jpg)
 ---
 
 #### Screenshot 5 — Output of `terraform output public_ip` showing the VM’s public IP address
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment4_Task3_Screenshot5.jpg)
 
 ---
 
@@ -82,7 +81,7 @@ Confirm that the Ansible controller can connect to the Terraform-provisioned Azu
 
 #### Screenshot 6 — Passwordless SSH command and the returned `mini-finance` hostname
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment4_Task4_Screenshot6.jpg)
 
 
 # Task 5 — Create the Ansible Inventory and Verify Connectivity
@@ -95,7 +94,7 @@ Add the Terraform-provisioned Azure VM to the Ansible inventory and confirm that
 
 #### Screenshot 7 — Ansible ping output showing `SUCCESS` and `pong` from the Azure VM
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment4_Task5_Screenshot7.jpg)
 
 ---
 
@@ -131,7 +130,6 @@ Screenshot must show:
 - Nginx service configured as started and enabled
 - Beginning of Play 2 with the Git repository URL and synchronization task
 
-Add your screenshot here.
 
 ---
 
@@ -145,7 +143,6 @@ Screenshot must show:
 - Play 3 targeting `localhost`
 - The `uri` verification and `assert` condition
 
-Add your screenshot here.
 
 ---
 
@@ -252,37 +249,6 @@ Copy and paste the complete contents of your `ansible/site.yml` file below:
 
 ---
 
-# Task 7 — Validate and Run the Ansible Playbook
-
-## Goal
-
-Validate the syntax of the multi-play Ansible playbook and run it to install Nginx, deploy the Mini Finance website, and verify the deployment.
-
-### Evidence
-
-#### Screenshot 10 — Successful playbook syntax check showing `playbook: site.yml`
-
-Add your screenshot here.
-
----
-
-#### Screenshot 11 — Play 3 output showing the successful HTTP verification and assertion
-
-Add your screenshot here.
-
----
-
-#### Screenshot 12 — Final `PLAY RECAP` showing `failed=0` and `unreachable=0`
-
-Add your screenshot here.
-
----
-
-### Notes
-
-Add your task notes here.
-
----
 
 # Task 8 — Test the Mini Finance Website in a Browser
 
@@ -294,8 +260,7 @@ Confirm that the Mini Finance website is publicly accessible through the Azure V
 
 #### Screenshot 13 — Mini Finance website successfully loading in the browser, with the Azure VM’s public IP address visible in the address bar
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week09_Assignment4_Task8_Screenshot13.jpg)
 ---
 
 ### Website URL
@@ -318,7 +283,7 @@ Create a `README.md` file to document the Mini Finance infrastructure and deploy
 
 #### Screenshot 14 — Completed `README.md` displayed in the VS Code Markdown preview or terminal
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment4_Task9_Screenshot14.jpg)
 
 ---
 
@@ -327,7 +292,40 @@ Add your screenshot here.
 Copy and paste the complete contents of your `README.md` file below:
 
 ```markdown
-Add your README.md content here.
+# Ansible Onboarding Project
+
+## Author
+
+**Kirangandhi Chitturi**
+
+## Project Summary
+
+This project demonstrates an Ansible development environment with Git, pre-commit hooks, YAML linting, and Ansible linting.
+
+The repository is configured to maintain consistent code quality and validate Ansible content before changes are committed to Git.
+
+## New Machine? Do This
+
+When setting up this project on a new machine:
+
+- [ ] Clone the Git repository
+- [ ] Navigate to the project directory
+- [ ] Install Python 3 and Python virtual environment support
+- [ ] Create a Python virtual environment
+- [ ] Activate the virtual environment
+- [ ] Install the required Python packages
+- [ ] Install the pre-commit Git hooks
+- [ ] Verify Ansible and ansible-lint
+- [ ] Run all pre-commit checks
+
+### Setup Commands
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+pre-commit install
+pre-commit run --all-files
 ```
 
 ---

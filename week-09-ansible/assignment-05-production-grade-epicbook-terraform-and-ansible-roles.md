@@ -24,7 +24,7 @@ Terraform will be used to provision the cloud infrastructure. Ansible roles will
 
 #### Screenshot 1 — Terminal showing the completed `epicbook-prod` project structure
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week09_Assignment5_Task1_Screenshot1.jpg)
 
 ---
 
@@ -34,19 +34,19 @@ Answer the following in your own words:
 
 **1. Which cloud provider did you choose for this assignment?**
 
-Add your answer here.
+I chose Amazon Web Services (AWS) for this assignment. I am using AWS EC2 instances to host the EpicBook application and Amazon RDS for the managed MySQL database. AWS integrates well with Terraform and Ansible, allowing me to automate infrastructure provisioning and application deployment.
 
 ---
 
 **2. Why is it useful to keep Terraform files and Ansible files in separate folders?**
 
-Add your answer here.
+Keeping Terraform and Ansible files in separate folders makes the project easier to organise, maintain and troubleshoot. Terraform manages cloud infrastructure, such as EC2 instances, networking and databases, while Ansible manages server configuration and application deployment. Separating them makes it easier to update one part without affecting the other and improves collaboration.
 
 ---
 
 **3. What is the purpose of the `roles` directory in Ansible?**
 
-Add your answer here.
+The roles directory helps organise Ansible automation into reusable and manageable components. Each role handles a specific responsibility. In this assignment, the common role prepares the server, the nginx role installs and configures the web server, and the epicbook role deploys and manages the application. This structure reduces code duplication and makes playbooks easier to maintain and reuse.
 
 ---
 
@@ -90,19 +90,19 @@ Answer the following in your own words:
 
 **1. What resources did Terraform create for this assignment?**
 
-Add your answer here.
+Terraform was used to manage AWS infrastructure, including EC2 instances, SSH key configuration and security groups. The EpicBook deployment also requires a managed MySQL database through Amazon RDS, along with appropriate networking and database security rules. I'll confirm the final list once those resources have been provisioned.
 
 ---
 
 **2. Why should you review `terraform plan` before running `terraform apply`?**
 
-Add your answer here.
+Reviewing terraform plan helps me understand which resources Terraform intends to create, modify or destroy before applying changes. It helps prevent accidental infrastructure changes, unexpected costs and disruption to existing applications.
 
 ---
 
 **3. Why should database passwords not be shown in Terraform output?**
 
-Add your answer here.
+Database passwords are sensitive credentials. Displaying them in Terraform output could expose them through terminal screenshots, logs or shared documentation. Passwords should be handled securely, marked sensitive where appropriate, and never committed to GitHub.
 
 ---
 
