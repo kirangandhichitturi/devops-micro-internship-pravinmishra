@@ -30,8 +30,7 @@ cat .dockerignore
 
 The file must exclude `node_modules`, `build`, and `.env`.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week11_Assignment2_Task1_Screenshot1.jpg)
 ---
 
 # Task 2 — Create a Single-Stage Docker Image
@@ -46,8 +45,7 @@ Create a baseline single-stage Docker image and run the application on port 3000
 
 Add a screenshot showing the completed `Dockerfile.single`.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week11_Assignment2_Task2_Screenshot2.jpg)
 ---
 
 #### Screenshot 3 — Single-Stage Application in Browser
@@ -60,8 +58,7 @@ http://localhost:3000
 
 Ensure that your full name is visible in the application.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week11_Assignment2_Task2_Screenshot3.jpg)
 ---
 
 # Task 3 — Create a Multi-Stage Docker Build
@@ -76,8 +73,7 @@ Create an optimized multi-stage Docker image with separate builder and Nginx run
 
 Add a screenshot showing the completed multi-stage `Dockerfile`.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week11_Assignment2_Task3_Screenshot4.jpg)
 ---
 
 #### Screenshot 5 — Multi-Stage Application in Browser
@@ -90,8 +86,7 @@ http://localhost
 
 Ensure that your full name is visible in the application.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week11_Assignment2_Task3_Screenshot5.jpg)
 ---
 
 # Task 4 — Compare Docker Image Sizes
@@ -117,8 +112,7 @@ react-single:latest
 react-multistage:latest
 ```
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week11_Assignment2_Task4_Screenshot6.jpg)
 ---
 
 ### Percentage Reduction Calculation
@@ -136,6 +130,13 @@ Percentage reduction =
 
 Percentage reduction: Add result here
 ```
+Single-stage (react-app:single):     505MB
+Multi-stage (react-app:multistage):  26.6MB
+
+% reduction = (505 − 26.6) / 505 × 100
+            = 478.4 / 505 × 100
+            = 94.7%
+
 
 ---
 
@@ -156,7 +157,7 @@ Write a short analysis of 5–8 lines covering:
 - How smaller images improve image pull and deployment speed
 - One Docker build-caching optimization you used
 
-Write your analysis here.
+The single-stage Docker image (react-app:single) was 505 MB, while the multi-stage image (react-app:multistage) was only 26.6 MB. This represents a 94.7% reduction in image size. The smaller runtime image improves security by excluding unnecessary build tools and dependencies. It reduces the attack surface by minimising the number of packages and components that could contain vulnerabilities. Smaller images require less data to download, improving image pull times and speeding up deployments. They also reduce network usage and make container distribution more efficient. One Docker build-caching optimisation used was copying dependency files first and installing dependencies before copying the remaining source code, allowing Docker to reuse cached layers when application code changes.
 
 ---
 
@@ -191,14 +192,13 @@ Create a LinkedIn post describing what you built, what a multi-stage Docker buil
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/ea_hUnBY
 
 ---
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here.
-
+- ![Task 1 —](screenshots/Week11_Assignment2_Task6_LinkedinPost.jpg)
 ---
 
 # Submission Instructions
