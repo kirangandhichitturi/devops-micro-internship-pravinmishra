@@ -26,7 +26,7 @@ Add a screenshot of Docker Hub showing your newly created public repository:
 my-react-app
 ```
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment5_Task1_Screenshot1.jpg)
 
 ---
 
@@ -40,8 +40,7 @@ Login Succeeded
 
 Ensure that your full name is visible and that no password, Personal Access Token, or device code is exposed.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week11_Assignment5_Task1_Screenshot2.jpg)
 ---
 
 #### Screenshot 3 — Correctly Tagged Image
@@ -54,7 +53,7 @@ docker image ls <YOUR_DOCKERHUB_USERNAME>/my-react-app
 
 The output must show the `latest` tag.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment5_Task1_Screenshot3.jpg)
 
 ---
 
@@ -68,7 +67,7 @@ docker push <YOUR_DOCKERHUB_USERNAME>/my-react-app:latest
 
 The output must include a pushed status or image digest.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment5_Task1_Screenshot4.jpg)
 
 ---
 
@@ -126,7 +125,7 @@ Add your screenshot here.
 
 # Docker Hub Repository URL
 
-**Repository URL:** `Add your Docker Hub repository URL here`
+**Repository URL:** https://hub.docker.com/repository/docker/kirangandhichitturi/my-react-app/general
 
 ---
 
@@ -134,11 +133,13 @@ Add your screenshot here.
 
 Write a short explanation covering:
 
-- Why image tagging is required before pushing to Docker Hub
-- Why a container registry is useful in DevOps workflows
-- Why production deployments should use versioned image tags instead of relying only on `latest`
+Docker Image Tagging and Container Registries
 
-Write your explanation here.
+- Why image tagging is required before pushing to Docker Hub: Image tagging gives a Docker image a unique name and version, making it easy to identify and manage. It also links the image to a specific Docker Hub repository so it can be pushed and pulled easily.
+
+- Why a container registry is useful in DevOps workflows: A container registry such as Docker Hub provides a central location to store, manage and share Docker images. Development, testing and production environments can pull the same image, supporting consistent deployments and CI/CD automation.
+
+- Why production deployments should use versioned image tags instead of relying only on latest: Versioned tags such as v1.0, v1.1 and v2.0 help identify exactly which application version is deployed. They make rollbacks easier, improve deployment traceability and reduce the risk of unexpected changes. The latest tag can point to a different image over time, so it is less reliable for production deployments.
 
 ---
 
@@ -162,7 +163,7 @@ Include:
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/e5bNaQYP
 
 ---
 
