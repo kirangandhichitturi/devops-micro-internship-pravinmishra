@@ -28,8 +28,7 @@ docker network ls
 
 The output must include the default `bridge`, `host`, and `none` networks.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week11_Assignment3_Task1_Screenshot1.jpg)
 ---
 
 #### Screenshot 2 — Nginx Image Pull
@@ -40,7 +39,7 @@ Add a screenshot of the terminal showing successful completion of:
 docker pull nginx:alpine
 ```
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task1_Screenshot2.jpg)
 
 ---
 
@@ -58,7 +57,7 @@ The output must show the running `myweb` container with:
 0.0.0.0:80->80/tcp
 ```
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task1_Screenshot3.jpg)
 
 ---
 
@@ -67,12 +66,12 @@ Add your screenshot here.
 Add a browser screenshot showing the Nginx Welcome Page at:
 
 ```text
-http://<YOUR-VM-PUBLIC-IP>
+http://3.89.105.190/
 ```
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task1_Screenshot4.jpg)
 
 ---
 
@@ -92,8 +91,7 @@ Add a screenshot of the terminal showing `mynetwork` in:
 docker network ls
 ```
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week11_Assignment3_Task2_Screenshot5.jpg)
 ---
 
 #### Screenshot 6 — Running `web` and `client` Containers
@@ -106,7 +104,7 @@ docker ps
 
 The output must show both `web` and `client` containers running without published host ports.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task2_Screenshot6.jpg)
 
 ---
 
@@ -120,8 +118,7 @@ docker exec client wget -qO- http://web
 
 The output must display the Nginx Welcome Page HTML.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week11_Assignment3_Task2_Screenshot7.jpg)
 ---
 
 #### Screenshot 8 — Custom Network Inspection
@@ -134,7 +131,7 @@ docker network inspect mynetwork
 
 The output must show both `web` and `client` connected to `mynetwork`.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task2_Screenshot8.jpg)
 
 ---
 
@@ -156,7 +153,7 @@ docker network ls
 
 The output must include both `frontend-network` and `backend-network`.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task3_Screenshot9.jpg)
 
 ---
 
@@ -174,7 +171,7 @@ The output must show:
 - `backend` without a published host port
 - `db` without a published host port
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task3_Screenshot10.jpg)
 
 ---
 
@@ -188,7 +185,7 @@ docker network inspect frontend-network
 
 The output must show `frontend` and `backend`.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task3_Screenshot11.jpg)
 
 ---
 
@@ -202,7 +199,7 @@ docker network inspect backend-network
 
 The output must show `backend` and `db`.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task3_Screenshot12.jpg)
 
 ---
 
@@ -216,7 +213,7 @@ docker exec frontend wget -qO- http://backend
 
 The output must display the Nginx Welcome Page HTML.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task3_Screenshot13.jpg)
 
 ---
 
@@ -224,8 +221,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing a successful connection to `db` on port `27017` from the `backend` container.
 
-Add your screenshot here.
-
+- ![Task 1 —](screenshots/Week11_Assignment3_Task3_Screenshot14.jpg)
 ---
 
 #### Screenshot 15 — Frontend-to-Database Isolation
@@ -238,7 +234,7 @@ The output must include:
 Expected result: frontend cannot reach db
 ```
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task3_Screenshot15.jpg)
 
 ---
 
@@ -247,12 +243,12 @@ Add your screenshot here.
 Add a browser screenshot showing the Nginx Welcome Page from the `frontend` container at:
 
 ```text
-http://<YOUR-VM-PUBLIC-IP>
+http://3.89.105.190/
 ```
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task3_Screenshot16.jpg)
 
 ---
 
@@ -274,7 +270,7 @@ docker ps
 
 The output must show the running `fastapp` container.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task4_Screenshot17.jpg)
 
 ---
 
@@ -292,7 +288,8 @@ The output must confirm:
 "NetworkMode": "host"
 ```
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task4_Screenshot18.jpg)
+
 
 ---
 
@@ -301,12 +298,12 @@ Add your screenshot here.
 Add a browser screenshot showing the Nginx Welcome Page at:
 
 ```text
-http://<YOUR-VM-PUBLIC-IP>
+http://3.89.105.190/
 ```
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task4_Screenshot19.jpg)
 
 ---
 
@@ -319,7 +316,8 @@ docker stop fastapp
 docker rm fastapp
 ```
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task4_Screenshot20.jpg)
+
 
 ---
 
@@ -332,7 +330,26 @@ Write a short note explaining:
 - Why the frontend could not access the database in Task 3
 - The difference between bridge mode and host network mode
 
-Write your note here.
+# Docker Networking – Notes
+
+**1. Default Bridge Networking**
+
+Docker's default bridge network allows containers on the same bridge to communicate using their IP addresses. However, automatic container-name resolution is not supported by default. Containers can access external networks through the host.
+
+**2. Container-Name Communication on a Custom Bridge Network**
+
+A custom bridge network allows containers to communicate using their container names instead of IP addresses. For example, the backend container can connect to MongoDB using `db:27017`. This makes communication easier and more reliable.
+
+**3. Why the Frontend Could Not Access the Database in Task 3**
+
+The frontend and database containers were placed on separate Docker networks. The backend was connected to both networks, allowing it to communicate with the frontend and database. The frontend could not directly access MongoDB because it was not connected to the backend network. This provides network isolation and improves security.
+
+**4. Difference Between Bridge Mode and Host Network Mode**
+
+- **Bridge mode:** Containers use an isolated Docker network with their own IP addresses. Ports must be published to make services accessible from outside the container.
+- **Host mode:** The container shares the host machine's network directly. Port mapping is not required, but the container uses the host's ports and can cause port conflicts.
+
+**Conclusion:** Docker networking helps control communication between containers. Custom bridge networks provide service discovery and isolation, while host networking provides direct access to the host network with less isolation.
 
 ---
 
@@ -348,13 +365,13 @@ Create a LinkedIn post about the Docker networking modes explored, one key lesso
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+(https://lnkd.in/p/eJkSn4nN)
 
 ---
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here.
+- ![Task 1 —](screenshots/Week11_Assignment3_Task4_LinkedinPost.jpg)
 
 ---
 

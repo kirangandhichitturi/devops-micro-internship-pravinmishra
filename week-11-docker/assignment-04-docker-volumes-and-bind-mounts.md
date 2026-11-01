@@ -65,7 +65,7 @@ Add your screenshot here.
 Add a browser screenshot showing the Nginx Welcome Page at:
 
 ```text
-http://<YOUR-VM-PUBLIC-IP>
+http://3.89.105.190/
 ```
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
@@ -309,12 +309,24 @@ Write a short explanation covering:
 - Why Docker Volumes are commonly used for application data
 
 Write your explanation here.
+Bind Mounts vs Docker Volumes
+A Bind Mount connects a directory or file from the host machine directly to a Docker container. Any changes made inside the container are reflected in the host directory.
+
+A Docker Volume is managed by Docker and stores data independently of the container lifecycle.
+
+- Task 1 – Bind Mount Persistence: I verified that files created or modified inside the container were also visible in the host directory. Even after removing and recreating the container, the data remained available because it was stored on the host machine.
+
+- Task 2 – Docker Volume Persistence: I created a Docker Volume and mounted it inside the container. After removing the container and creating a new one using the same volume, I confirmed that the previously stored data was still available.
+
+- Why Docker Volumes are commonly used: Docker Volumes provide reliable and persistent storage for application data, databases and other important files. They are managed by Docker, can be reused across multiple containers, and keep application data separate from container lifecycles.
+
+Key Learning: Both Bind Mounts and Docker Volumes provide data persistence, but Docker Volumes are generally preferred for production applications because they are easier to manage, portable and less dependent on the host directory structure.
 
 ---
 
 # Public Application URL
 
-**Application URL:** `Add your VM public IP URL here`
+**Application URL:** [(http://3.89.105.190/)]
 
 ---
 
@@ -330,7 +342,7 @@ Create a LinkedIn post about Docker Volumes and Bind Mounts, including one diffe
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/eS66nU5r
 
 ---
 
