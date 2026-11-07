@@ -75,7 +75,7 @@ The output must include a pushed status or image digest.
 
 Add a screenshot of your Docker Hub repository showing the uploaded `latest` image tag.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment5_Task1_Screenshot5.jpg)
 
 ---
 
@@ -87,7 +87,7 @@ Add a screenshot of the terminal showing:
 - Successful `docker pull` output
 - `docker image ls` showing the pulled image
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment5_Task1_Screenshot6.jpg)
 
 ---
 
@@ -105,7 +105,7 @@ The output must show the running `react-container` with:
 0.0.0.0:80->80/tcp
 ```
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment5_Task1_Screenshot7.jpg)
 
 ---
 
@@ -114,12 +114,12 @@ Add your screenshot here.
 Add a browser screenshot showing the React application at:
 
 ```text
-http://<YOUR-VM-PUBLIC-IP>
+http://3.89.105.190
 ```
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+- ![Task 1 —](screenshots/Week11_Assignment5_Task1_Screenshot8.jpg)
 
 ---
 

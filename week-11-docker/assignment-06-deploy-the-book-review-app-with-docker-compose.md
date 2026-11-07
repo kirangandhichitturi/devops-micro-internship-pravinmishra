@@ -208,32 +208,14 @@ Add your screenshot here.
 
 #### Screenshot 14 — CORS Verification
 
-Add a browser developer-tools screenshot with:
-
 - The Network tab showing a successful API request
 - The Console drawer showing no CORS error after the API interaction
-
-Add your screenshot here.
 
 ---
 
 # Task 6 — Prove MySQL Data Persistence
 
 ## Goal
-
-Verify that MySQL data remains after a non-destructive Docker Compose down/up cycle.
-
-### Evidence
-
-#### Screenshot 15 — Data Before Restart
-
-Add a browser screenshot showing the registered user or created review before the down/up cycle.
-
-Add your full name as a clear caption directly below the screenshot.
-
-Add your screenshot here.
-
----
 
 #### Screenshot 16 — Non-Destructive Stack Restart
 
@@ -277,7 +259,13 @@ Write a short explanation of 5–8 lines covering:
 - When a full reset is useful
 - Why a full reset must not be used before persistence evidence is captured
 
-Write your explanation here.
+1. `docker compose down` stops and removes the containers and network created by Compose, but preserves named volumes by default.
+2. Named volumes should be kept when preserving MySQL data because they store database files independently of the container.
+3. When containers are recreated, MySQL can reconnect to the existing named volume and retain the saved data.
+4. Removing named volumes using `docker compose down -v` permanently deletes the stored database data.
+5. A full reset is useful when troubleshooting, starting an assignment from scratch, or removing old application data.
+6. Before performing a full reset, make sure any important data has been backed up.
+7. A full reset must not be performed before capturing persistence evidence, because it would delete the data needed to prove that MySQL data survives container recreation.
 
 ---
 
@@ -303,7 +291,7 @@ Create a LinkedIn post about the Book Review App deployment and what you learned
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:** https://lnkd.in/p/ePp6u_3w
 
 #### LinkedIn Post Screenshot
 
